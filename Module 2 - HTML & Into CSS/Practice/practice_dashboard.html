@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <!--This page includes practice with things like lists, links, and images.-->
 <!--I also added inline CSS Styling instead of the HTML stuff I used previouly.-->
+<!--Added internal CSS styling to fix underlines image links.-->
 
 <html lang="en">
     <head>
         <title>My Dashboard</title>
         <meta charset="utf-8">
+        <style>
+            #img-link {
+                text-decoration: none !important;
+            }
+        </style>
     </head>
     <body>
-        <h1 style="font-size:300%; color:#008080;">
+        <h1 style="font-size:300%; letter-spacing: 4px; color:#008080;">
             <img src="Images/depaul_logo.png" alt="Depaul logo" style="height:33px;">
             Aiden's Dashboard
         </h1>
         <img src="Images/me_thinking.jpg" alt="Image of Aiden" style="height:350px;">
 
         <h2 style="color:#008080;">Social Links:</h2>
-        <a href="https://github.com/Navnedia" target="_blank">
-            <img src="Images/github_icon.png" alt="GitHub icon" style="height:40px;">
-        </a>
-        <a href="https://www.youtube.com/channel/UCS5Zsy_mhGTKYyjTCgbF3WQ" target="_blank">
-            <img src="Images/yout_icon.png" alt="Youtube icon" style="height:40px;">
-        </a>
-        <a href="https://www.instagram.com/aiden.vand/" target="_blank">
-            <img src="Images/insta_icon.png" alt="Instagram icon" style="height:45px;">
-        </a>
-        <a href="mailto:avandek03@gmail.com" target="_blank">
-            <img src="Images/mail_icon.png" alt="Email icon" style="height:42px;">
-        </a>
+        <p style="letter-spacing: 10px;">
+            <a id="img-link" href="https://github.com/Navnedia" target="_blank">
+                <img src="Images/github_icon.png" alt="GitHub icon" style="height:40px;">
+            </a>
+            <a id="img-link" href="https://www.youtube.com/channel/UCS5Zsy_mhGTKYyjTCgbF3WQ" target="_blank">
+                <img src="Images/yout_icon.png" alt="Youtube icon" style="height:40px;">
+            </a>
+            <a id="img-link" href="https://www.instagram.com/aiden.vand/" target="_blank">
+                <img src="Images/insta_icon.png" alt="Instagram icon" style="height:45px;">
+            </a>
+            <a id="img-link" href="mailto:avandek03@gmail.com" target="_blank">
+                <img src="Images/mail_icon.png" alt="Email icon" style="height:42px;">
+            </a></p>
 
         <h2 style="color:#008080;">ToDo List:</h2>
         <ol>
