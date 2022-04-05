@@ -4,16 +4,14 @@
         <title>Styling Tests</title>
         <meta charset="utf-8">
         <link rel="icon" href="Images/css_logo.png">
+        <link rel="stylesheet" href="styles1.css">
         <style>
-            body {
-                background-color: slategray;
-                padding-left: 20px;
-                padding-bottom: 50px;
-
-                /* Boarder Centered, but only works in full screen.*/
-                /* border: 10px solid black;
-                width: 1000px;
-                margin-left: 20%; */
+            /* See this resource about the .content and centering body content with the div:
+                https://www.w3schools.com/howto/howto_css_center_website.asp 
+            */
+            .content {
+                border-color: white;
+                background-color: black
             }
             h1 {
                 font-family: Arial, Helvetica, sans-serif;
@@ -25,45 +23,47 @@
                 font-size: 225%;
                 color: firebrick;
             }
-            p {
-                font-family: 'Courier New', Courier, monospace;
+            p, ol {
+                font-family: monospace, 'Courier New', Courier;
                 font-size: 145%;
-                color: palegreen;
+                color: lime;
                 max-width: 900px;
+                padding-left: 30px;
             }
             ol {
                 list-style-type: upper-roman;
-                font-family: 'Courier New', Courier, monospace;
-                color: palegreen;
+                padding-left: 85px;
             }
-            ul {
-                list-style-type: square;
-            }
+            ul {list-style-type: square;}
+            img{border: 5px solid white;}
         </style>
     </head>
     <body>
-        <h1>Test Page for Inline, External, & Internal CSS Styling</h1>
+        <div class="content">
+            <h1>Inline, External, & Internal CSS Styling Test</h1>
 
-        <h2>About Me:</h2>
-        <img src="Images/me_thinking.jpg" alt="" style="height: 300px;">
-        <p>My name is Aiden Vandekerckhove and I'm a Freshman studying Computer science
-            in the CDM at DePaul University.</p>
+            <h2>About Me:</h2>
+            <img src="Images/me_thinking.jpg" alt="" style="height: 300px;">
+            <p style="font-family: cursive; color: white;">
+                My name is Aiden Vandekerckhove and I'm a Freshman studying Computer science
+                in the CDM at DePaul University.</p>
 
-        <h2>Education:</h2>
-        <p>I went to high school at ETHS in Evanston. I gradutated with honors and I achived 
-            National Honor Society. I'm currently working towards my CS degree at DePaul.
-            I took several programming courses in high school, and now I'm continuing this 
-            pation into college.</p>
+            <h2>Education:</h2>
+            <p>I went to high school at ETHS in Evanston. I gradutated with honors and I achived 
+                National Honor Society. I'm currently working towards my CS degree at DePaul.
+                I took several programming courses in high school, and now I'm continuing this 
+                pation into college.</p>
 
-        <h2>Skills:</h2>
-        <ol>
-            <li>Java</li>
-                <ul>
-                    <li>Marven</li>
-                    <li>JUnit Testing</li>
-                </ul>
-            <li>HTML & CSS</li>
-            <li>Version control with Git & GitHub</li>
-        </ol>
+            <h2>Skills:</h2>
+            <ol>
+                <li>Java</li>
+                    <ul>
+                        <li>Marven</li>
+                        <li>JUnit Testing</li>
+                    </ul>
+                <li>HTML & CSS</li>
+                <li>Version control with Git & GitHub</li>
+            </ol>
+        </div>
     </body>
 </html>
