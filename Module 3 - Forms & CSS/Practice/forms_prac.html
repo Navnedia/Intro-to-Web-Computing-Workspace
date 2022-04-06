@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Forms Test Page</title>
+        <meta charset="utf-8">
+        <style>
+            p {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Basic HTML Form Building Test</h1>
+
+        <form id="userInfo">
+            <h2>Contact Information</h2>
+            <p><label for="txtFirstName">First Name:</label>
+                <input type="text" id="txtFirstName"></p>
+
+            <p><label for="txtLastName">Last Name:</label>
+                <input type="text" id="txtLastName"></p>
+
+            <p><label for="txtEmail">Email:</label>
+                <input type="text" id="txtEmail"></p>
+
+            <p><label for="txtPhoneNumber">Phone Number (optional):</label>
+                <input type="text" id="txtPhoneNumber"></p>
+            
+            <h3>Address Information</h3>
+            <p><label for="txtStreetAddress">Street Address:</label>
+                <input type="text" id="txtStreetAddress"></p>
+
+            <p><label for="txtState">State:</label>
+                <input type="text" id="txtState"></p>
+            
+            <p><label for="txtZipCode">Zip Code:</label>
+                <input type="text" id="txtZipCode"></p>
+
+            <h2>Questions Section</h2>
+            <p><label for="txtarAboutMe">Tell us a little bit about yourself:</label></p>
+            <p><textarea id="textarAboutMe" cols="67" rows="10"></textarea></p>
+
+            <p><label for="txtarSkills">What skills do you have that you think might apply to this position?</label>
+                <textarea id="txtarSkills" cols="30" rows="10"></textarea></p>
+
+            <p><input type="button" 
+                    value="Submit" 
+                    id="btnSubmit" 
+                    style="height: 30px; width: 200px;"></p>
+        </form>
+    </body>
+</html>
