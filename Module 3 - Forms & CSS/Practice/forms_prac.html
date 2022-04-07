@@ -8,29 +8,30 @@
     <body>
         <h1>Basic HTML Form Building Test</h1>
 
+        <!--Textboxes are limited to 35 characters to protect against script injection.-->
         <form id="userInfo">
             <h2>Contact Information</h2>
             <p><label for="txtFirstName">First Name:</label>
-                <input type="text" id="txtFirstName"></p>
+                <input type="text" id="txtFirstName" maxlength="35"></p>
 
             <p><label for="txtLastName">Last Name:</label>
-                <input type="text" id="txtLastName"></p>
+                <input type="text" id="txtLastName" maxlength="35"></p>
 
             <p><label for="txtEmail">Email:</label>
-                <input type="text" id="txtEmail"></p>
+                <input type="text" id="txtEmail" maxlength="35"></p>
 
             <p><label for="txtPhoneNumber">Phone Number (optional):</label>
-                <input type="text" id="txtPhoneNumber"></p>
+                <input type="text" id="txtPhoneNumber" maxlength="35"></p>
             
             <h3>Address Information</h3>
             <p><label for="txtStreetAddress">Street Address:</label>
-                <input type="text" id="txtStreetAddress"></p>
+                <input type="text" id="txtStreetAddress" maxlength="35"></p>
 
             <p><label for="txtState">State:</label>
-                <input type="text" id="txtState"></p>
+                <input type="text" id="txtState" maxlength="35"></p>
             
             <p><label for="txtZipCode">Zip Code:</label>
-                <input type="text" id="txtZipCode"></p>
+                <input type="text" id="txtZipCode" maxlength="35"></p>
 
             <h2>Questions Section</h2>
             <p><label for="txtarAboutMe">Tell us a little bit about yourself:</label></p>
