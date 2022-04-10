@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Forms 2 Test Page</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Test Form #2</h1>
+
+        <form id="practiceForm">
+            <p><label for="txtFirstName">First Name:</label>
+                <input type="text" maxlength="35" id="txtFirstName"></p>
+
+            <p><label for="txtLastName">Last Name:</label>
+                <input type="text" maxlength="35" id="txtLastName"></p>
+
+            <p>Select foods you enjoy:</p>
+            <p><input type="checkbox" id="chkTacos">
+                <label for="chkTacos">Tacos</label></p>
+            
+            <p><input type="checkbox" id="chkBurgers">
+                <label for="chkBurgers">Burgers</label></p>
+
+            <p><input type="checkbox" id="chkPizza">
+                <label for="chkPizza">Pizza</label></p>
+            
+            <p><label for="txtOther">Other:</label>
+                <input type="text" maxlength="65" id="txtOther"></p>
+
+            <p><label for="selFavoriteColor">
+                    Fill in the blank: My Favorite color is
+                </label>
+                <select id="selFavoriteColor">
+                    <option value="blue">Blue</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="orange">Orange</option>
+                    <option value="purple">Purple</option>
+                    <option value="pink">Pink</option>
+                    <option value="black">Black</option>
+                    <option value="brown">Brown</option>
+                </select></p>
+
+            <p>Who is your favorite composer?<br>
+                <input type="radio" name="favComposer" id="radBeethoven">
+                    <label for="radBeethoven">Beethoven</label><br>
+
+                <input type="radio" name="favComposer" id="radBach">
+                    <label for="radBach">Bach</label><br>
+
+                <input type="radio" name="favComposer" id="radMozart">
+                    <label for="radMozart">Mozart</label><br>
+
+                <input type="radio" name="favComposer" id="radBrahms">
+                    <label for="radBrahms">Brahms</label><br>
+                    
+                <input type="radio" name="favComposer" id="radStravinsky">
+                    <label for="radStravinsky">Stravinsky</label>
+            </p>
+
+            <p><label for="fileAttach">
+                 Please attach any files you want us to see:</label>
+                <input type="file" id="fileAttach"></p>
+
+
+            <hr>
+
+            <a href="https://bit.ly/3hXdL10Q" target="_blank">Terms and Conditions</a>
+            <p><input type="checkbox" required="required" id="chkTermsAccept">
+                <label for="chkTermsAccept">I accept the Terms and Conditions</label></p>
+
+            <input type="button" value="Submit" id="btnSubmit">
+        </form>
+    </body>
+</html>
