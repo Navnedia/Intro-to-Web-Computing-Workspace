@@ -7,10 +7,7 @@
     - Finish requirments
     - Check white space
     - You can add spaces to line up textboxes if you really want to.
-    - Maybe make image alt empty because it's decorative.
     - Double check against rubric requirments
-    - Read through
-    - Grammarlly
     - HTML Checker
     - Assignment Checklist
 -->
@@ -19,6 +16,7 @@
     <head>
         <title>Aiden V - IT 130 Assignment 3</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="a3_styles.css">
     </head> 
     <body>
         <h1>Ball Bandits!</h1>
@@ -34,18 +32,18 @@
         <h2>Sign Up Form</h2>
         <form id="teamSignUpForm">
             <p><label for="txtName">Name:</label>
-                <input type="text" maxlength="70" id="txtName"></p>
+                    <input type="text" maxlength="70" id="txtName"></p>
             
             <p><label for="txtPhoneNum">Phone Number:</label>
-                <input type="text" maxlength="15" id="txtPhoneNum"></p>
+                    <input type="text" maxlength="15" id="txtPhoneNum"></p>
 
             <!--I choose to set the values of my select box options to something simple
-                that will hopfully be easy to manage in a script. I felt this level
+                that will hopefully be easy to manage in a script. I felt this level
                 naming scheme is really all the description needed to understand what's
                 going on. If anything this simplicity makes it more clear and simple
-                to work with.-->
+                to work with in this context.-->
             <p><label for="selSkillLevel">
-                Please select the skill level statement that best applies to you:</label></p>
+                    Please select the skill level statement that best applies to you:</label></p>
             <p><select id="selSkillLevel">
                     <option value="level1">I have never played soccer</option>
                     <option value="level2">I have played less than 1 year</option>
@@ -58,30 +56,37 @@
                     <label for="radYesCaptain">Yes</label><br>
                 <input type="radio" name="considerTeamCaptain" id="radNoCaptain">
                     <label for="radNoCaptain">No</label></p>
-            
-            <!--Note to self: check white space in code, and consider if I should but them in one paragraph with br-->
+                    
             <p>What position would you prefer to play?</p>
             <p><input type="checkbox" id="chkPreferForward">
-                <label for="chkPreferForward">
-                    I prefer to play in a forward position</label></p>
-
-            <p><input type="checkbox" id="chkPreferDefense">
-                <label for="chkPreferDefense">
-                    I prefer to play in a defensive position</label></p>
-            
-            <p><input type="checkbox" id="chkNoPreference">
-                <label for="chkNoPreference">
-                    I have no preference about position</label></p>
+                    <label for="chkPreferForward">
+                        I prefer to play in a forward position</label><br>
+                <input type="checkbox" id="chkPreferDefense">
+                    <label for="chkPreferDefense">
+                        I prefer to play in a defensive position</label><br>
+                <input type="checkbox" id="chkNoPreference">
+                    <label for="chkNoPreference">
+                        I have no preference about position</label></p>
 
             <p><label for="txtarSpecialRequest">Special Requests:</label></p>
             <p><textarea id="txtarSpecialRequest" cols="40" rows="6"></textarea></p>
 
-            <input type="button" 
-                    value="Submit my Information"
-                    id="btnSubmitInfo"
-                    style="height: 30px;">
+            <p><input type="button" 
+                      value="Submit my Information"
+                      id="btnSubmitInfo"
+                      style="height: 30px;"></p>
         </form>
 
-        <h2>Research / Written Section</h2>
+        <!-- Research / Written Section -->
+        <!-- The term "programming convention" is used to define a set of general standards and practices
+            when writing code. The purpose of programming conventions is to promote consistent code throughout
+            a programming language, organization, or company. In this HTML context, programming conventions can
+            apply to the style we construct our code in using white space and indentations to make things extra clear.
+            This could relate to how we name our files with lower case and underscores, or how we structure
+            our folders. This term can even apply to how we name our form id attributes with prefixes in camelcase. 
+            
+            When we commit ourselves to maintaining these standards because it makes code more organized, clean, easier
+            to follow, and easier to debug/maintain for not just our future selfs, but also for others. 
+            Consistency can be the mark of a quality programmer.-->
     </body>
 </html>
