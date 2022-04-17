@@ -43,9 +43,25 @@ function alertDate() {
 }
 
 function alertMath() {
-    const num1 = 2;
-    const num2 = 3;
-    const solution = (num1 + num2);
+    const num1 = Math.floor(Math.random() * 100);
+    const num2 = Math.floor(Math.random() * 100);
+    var solution;
+    
+    switch (Math.floor(Math.random() * 2)) {
+        case 0:
+            solution = (num1 + num2);
+            alert(num1 + " + " + num2 + " = " + solution);
 
-    alert(num1 + " + " + num2 + " = " + solution);
+            break;
+        case 1:
+            solution = (num1 * num2);
+            alert(num1 + " * " + num2 + " = " + solution);
+
+            break;
+        case 2:
+            solution = (num1 / num2);
+            alert(num1 + " / " + num2 + " = " + solution);
+
+            break;
+    }
 }
