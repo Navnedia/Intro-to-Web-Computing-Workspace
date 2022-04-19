@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>M4 - Page 1 Memory Question</title>
+        <meta charset="utf-8">
+
+        <style>
+            h1 {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 145%;
+            }
+
+            input {
+                height: 40px;
+                font-weight: bold;
+                background-color: #096691;
+                color: #ffffff;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Module 4 - Page 1 Memory Question (Buttons!)</h1>
+
+        <form id="scriptButtonTestForm">
+            <p><input type="button"
+                      value="Click to Reveal My Favorite Music Type"
+                      id="btnFavMusic"
+                      onclick="alertFavMusic();"></p>
+
+            <p><input type="button"
+                      value="Do some math"
+                      id="btnMathAlert"
+                      onclick="alertMath();"></p>
+        </form>
+        
+        <script>
+            function alertFavMusic() {
+                alert("My favorite music is Hip Hop!");
+            }
+
+            function alertMath() {
+                alert("The square root of 49 is: " + Math.sqrt(49));
+            }
+        </script>
+    </body>
+</html>
