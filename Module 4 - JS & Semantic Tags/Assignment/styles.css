@@ -1,0 +1,18 @@
+body {
+    background-color: lightgrey;
+}
+
+img {
+    border: 6px solid black;
+}
+
+h1, h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input {
+    background-color: #096691;
+    color: #ffffff;
+    font-weight: bold;
+    height: 40px;
+}

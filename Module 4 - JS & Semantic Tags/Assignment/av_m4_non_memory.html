@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>M4 - Pg2 Non-Memory Question</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Module 4 - Page 2 (Star Wars)</h1>
+            <a href="https://m.imdb.com/title/tt0076759/?ref_=tt_mv_close" target="_blank">
+                <img src="Images/star_wars.jpg"
+                 alt="Star Wars Poster"
+                 style="height: 35%; 
+                        width: 35%;"></a>
+        </header>
+
+        <main>
+            <section>
+                <h2>Question</h2>
+                <form id="nameLengthForm">
+                    <p><input type="button"
+                           value="How many characters are in the title: Star Wars"
+                           id="btnMovieNameLength"
+                           onclick="movieNameLength();"
+                           style="width: 340px;"></p>
+                </form>
+            </section>
+
+            <section>
+                <h2>A Breif History</h2>
+                <p>Star Wars is an American epic space-opera multimedia franchise created by George
+                    Lucas, which began with the eponymous 1977 film and quickly became a worldwide
+                    pop-culture phenomenon. The franchise has been expanded into various films and other
+                    media, including television series, video games, novels, comic books, theme park 
+                    attractions, and themed areas, comprising an all-encompassing fictional universe. In
+                    2020, its total value was estimated at US$70 billion, and it is currently the 
+                    fifth-highest-grossing media franchise of all time.</p>
+            </section>
+        </main>
+
+        <aside>
+            <h2>Learn More</h2>
+            <ul>
+                <li><a href="https://m.imdb.com/title/tt0076759/?ref_=tt_mv_close" target="_blank">
+                    Star Wars IMDb Page</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Star_Wars" target="_blank">
+                    Original Star Wars Moive Wikipedia</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Star_Wars_trilogy" target="_blank">
+                    Star Wars Trilogy Wikipedia</a></li>
+            </ul>
+        </aside>
+
+        <footer>
+            <p>* Portions of the text for this page were found on Wikipedia.</p>
+        </footer>
+
+        <script>
+            function movieNameLength() {
+                alert("The length of the movie name is: " + "Star Wars".length);
+            }
+        </script>
+    </body>
+</html>
+
+<!--Importance of Semantic Tags:
+    It may seem annoying to some that we choose to spend time adding semantic tags when
+    they have no visual effect on our web page, but in fact, there are a lot of great reasons
+    to include semantic tags!
+
+    1) Perhaps the most important reason is that semantic tags make our web pages more accessible.
+       as web developers, it's very important to consider what we can do to make our pages accessible
+       to more people. Semantic tags are used by screen reading applications to help them understand
+       the structure of your page.
+    
+    2) Semantic tags are also a great way to improve the consistency, clarity, and efficiency of our
+       code. These qualities are things we want to strive for as programmers and semantic tags help
+       with this by breaking the code into smaller sections that can be understood. They help our code
+       flow better, and they can be great when it comes time to do some serious CSS styling.
+    
+    3) Using semantic tags can even help boost your site rankings in a web search on platforms like Google.
+       When search engines go to index your website they often use the semantic tags to guide their search,
+       so having clear semantic styling can help it understand your page contents.-->
