@@ -1,9 +1,9 @@
 body {
-    background-color: lightgrey;
+    background-color: #d3d3d3;
 }
 
 img {
-    border: 6px solid black;
+    border: 6px solid #000000;
 }
 
 h1, h2 {
