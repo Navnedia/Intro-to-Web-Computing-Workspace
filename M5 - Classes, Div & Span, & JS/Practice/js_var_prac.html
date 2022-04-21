@@ -3,17 +3,38 @@
     <head>
         <title>JavaScript Variables Practice</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="button_styles.css">
     </head>
     <body>
         <main>
-            <form id="moneyConversionForm">
-                <input type="button" 
-                       value="Dollars to Pesos"
-                       id="btnDollarsToPesos"
-                       onclick="">
-            </form>
+            <form id="conversionsForm">
+                <p><input type="button" 
+                          value="USD to Pesos"
+                          id="btnDollarsToPesos"
+                          onclick="dollarsToPesos();"
+                          class="fancy-button"></p>
+
+                <p><input type="button" 
+                          value="USD to CAD"
+                          id="btnUSDToCAD"
+                          onclick="usDollarsToCanadian();"
+                          class="fancy-button"></p>
+
+                <p><input type="button" 
+                value="Ounces to Pounds"
+                id="btnOuncesToPounds"
+                onclick="ouncesToPounds();"
+                class="fancy-button"></p>
+
+                <p><input type="button" 
+                    value="User Data"
+                    id="btnOutputUserData"
+                    onclick="practice();"
+                    class="fancy-button"></p>
+            </form> 
         </main>
 
-        <script type="text/javascript" src=""></script>
+        <script type="text/javascript" src="money_conversion.js"></script>
+        <script type="text/javascript" src="var_practice.js"></script>
     </body>
 </html>
