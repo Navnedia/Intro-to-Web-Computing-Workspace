@@ -10,10 +10,15 @@ p, ul {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.red-bold {
+.emphasize {
     font-weight: bold;
     font-size: 120%;
-    color: #FF0000;
+    font-style: italic;
+}
+
+.highlight {
+    background-color: #ffff00;
+    color: #ff0000;
 }
 
 .heading-box {
