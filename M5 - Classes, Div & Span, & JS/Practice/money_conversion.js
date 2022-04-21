@@ -18,3 +18,10 @@ function ouncesToPounds() {
 
     alert(ounces + " ounces is: " + pounds + " pounds");
 }
+
+function celciustoFahrenheit() {
+    var celcius = 40;
+    var fahrenheit = ((9 / 5) * celcius) + 32;
+
+    alert(celcius + " celcius in fahrenheit is: " + fahrenheit);
+}
