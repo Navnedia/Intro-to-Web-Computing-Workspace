@@ -1,0 +1,25 @@
+.emphasize {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.highlight {
+    background-color: yellow;
+    color: red;
+}
+
+.florid-letter {
+    font-size: 250%;
+    font-weight: bold;
+    color: blue;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.border-color-emphasize {
+    border: 5px solid red;
+    background-color: beige;
+    color: green;
+}
