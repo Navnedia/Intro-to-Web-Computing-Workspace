@@ -1,0 +1,24 @@
+body {
+    max-width: 800px;
+}
+
+h1, h2, h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p, ul {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.red-bold {
+    font-weight: bold;
+    font-size: 120%;
+    color: #FF0000;
+}
+
+.heading-box {
+    border: 3px solid #000000;
+    background-color: #096691;
+    color: #ffffff;
+    font-weight: bold;
+}
