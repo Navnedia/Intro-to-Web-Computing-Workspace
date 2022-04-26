@@ -1,0 +1,33 @@
+.border-form {
+    border: 5px solid #000000;
+    padding-left: 15px;
+}
+
+.fancy-button {
+    font-weight: bold;
+    height: 30px;
+}
+
+.red-theme {
+    background-color: #cd2701;
+    color: #ffffff;
+}
+
+.blue-theme {
+    background-color: #096691;
+    color: #ffffff;
+}
+
+.green-theme {
+    background-color: #008000;
+    color: #ffffff;
+}
+
+.form-output {
+    background-color: #000000;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}

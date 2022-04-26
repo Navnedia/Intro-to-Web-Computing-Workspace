@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>M5 - Pg1 Memory Question</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="Styles/form_styles.css">
+        <link rel="stylesheet" href="Styles/main_mem_styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Module 5 - Memory Question (Converter)</h1>
+        </header>
+
+        <main>
+            <section class="border-form">
+                <h2>Ounces to Grams Converter</h2>
+
+                <form id="ouncesToGramsForm">
+                    <p><label for="txtOunces">Ounces (oz):</label>
+                        <input type="text"
+                                maxlength="35"
+                                id="txtOunces"></p>
+
+                    <p><input type="button"
+                              value="Convert to grams"
+                              id="btnOzToGrams"
+                              onclick="ozToGrams();"
+                              class="fancy-button red-theme"></p>
+                </form>
+
+                <div id="results" class="form-output"></div>
+            </section>
+        </main>
+
+        <script src="Scripts/converter_memory.js"></script>
+    </body>
+</html>
