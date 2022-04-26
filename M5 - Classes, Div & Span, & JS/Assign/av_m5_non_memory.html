@@ -1,10 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>M5 - Pg2 Non-Memory Question</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="Styles/form_styles.css">
     </head>
     <body>
-        
+        <header>
+            <h1>Module 4 - Page 2 (Calculator)</h1>
+            <img src="Images/calculator.png" 
+                 alt="Calculator Illustration"
+                 style="height: 200px; width: 200px;">
+        </header>
+
+        <main>
+            <section>
+                <h2>Cylinder Surface Area Calculator</h2>
+                <img src="Images/cylinder_diagram.png" alt="Cylinder Diagram">
+
+                <form id="cylinderCalcForm">
+                    <p><label for="txtRadius">Cylinder Radius (r):</label>
+                        <input type="number" id="numRadius"></p>
+                    
+                    <p><label for="txtHeight">Cylinder Height (h):</label>
+                        <input type="number" id="numHeight"></p>
+
+                    <p><input type="button" 
+                              value="Find the curved surface area"
+                              id="btnCurvedSurfaceArea"
+                              onclick="getCurvedSurface();"
+                              class="fancy-button red-theme">
+                            
+                        <input type="button" 
+                               value="Find the total surface area"
+                               id="btnTotalSurfaceArea"
+                               onclick="getTotalSurface();"
+                               class="fancy-button blue-theme"></p>
+                </form>
+
+                <div id="calculationResults" class="form-output"></div>
+            </section>
+        </main>
+
+        <script src="Scripts/cylinder_calc.js"></script>
     </body>
 </html>
