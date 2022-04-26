@@ -1,0 +1,19 @@
+.header-styles {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 15px;
+}
+
+.main-styles {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 5px dashed #096691;
+    border-radius: 30px;
+    max-width: fit-content;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+body {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #d3d3d3;
+}
