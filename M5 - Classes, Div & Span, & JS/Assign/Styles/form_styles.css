@@ -4,6 +4,7 @@
 }
 
 .fancy-button {
+    border-radius: 10px;
     font-weight: bold;
     height: 30px;
 }
