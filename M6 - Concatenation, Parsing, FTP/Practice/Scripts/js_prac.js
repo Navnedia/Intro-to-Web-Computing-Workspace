@@ -7,17 +7,17 @@ function convertCelsToFahr() {
     document.getElementById("tempConversionResult").innerHTML = output;
 }
 
-function getAgeInfo() {
+function getAge() {
     var result
     var birthDate = new Date(document.getElementById("birthDate").value);
     var today = new Date();
 
-    var currentAge = getCurrentAge(birthDate);
+    var currentAge = calculateCurrentAge(birthDate);
     result = "<p>Our best guess at your current age is: "+ currentAge +".</p>"
     document.getElementById("currentAgeResult").innerHTML = result;
 }
 
-function getCurrentAge(birthDate) {
+function calculateCurrentAge(birthDate) {
     var today = new Date();
     var age = today.getFullYear() - birthDate.getFullYear();
     var monthDiff = today.getMonth() - birthDate.getMonth();
