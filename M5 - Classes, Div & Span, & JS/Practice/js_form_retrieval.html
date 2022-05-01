@@ -3,7 +3,7 @@
     <head>
         <title>JS Test Forms</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="Styles/form_styles.css">
+        <link rel="stylesheet" href="styles/form_styles.css">
 
         <style>
             h1 {
@@ -50,7 +50,7 @@
                     <p><input type="button"
                               value="Go!" 
                               id="btnSubmit" 
-                              class="fancy-button"
+                              class="fancy-button yellow-theme"
                               style="width: 100px;"
                               onclick="alertColor();"></p>
                 </form>
@@ -59,7 +59,7 @@
             <section>
                 <form id="mathForm" class="border-form">
                     <p><label for="txtNum1">Enter the first number in your equation:</label>
-                        <input type="number" maxlength="20" id="num1"></p>
+                        <input type="text" id="txtNum1"></p>
 
                     <p><label for="selMathOperation">Select the mathamatical operation:</label>
                         <select id="selMathOperation">
@@ -70,18 +70,18 @@
                         </select></p>
 
                     <p><label for="txtNum2">Enter the second number in your equation:</label>
-                        <input type="number" maxlength="20" id="num2"></p>
+                        <input type="text" id="txtNum2"></p>
 
                     <p><input type="button" 
                               value="Calculate"
                               id="btnCalc"
-                              class="fancy-button"
+                              class="fancy-button orange-theme"
                               style="width: 100px;"
                               onclick="doMath();"></p>
                 </form>
             </section>
         </main>
 
-        <script src="Scripts/form_inputs.js"></script>
+        <script src="scripts/form_inputs.js"></script>
     </body>
 </html>
