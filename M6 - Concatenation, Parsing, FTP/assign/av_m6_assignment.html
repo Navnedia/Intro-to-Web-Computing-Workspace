@@ -20,11 +20,11 @@
                 <form>
                     <p>( <input type="text" id="txtFirstNum" placeholder="First Number">
                         + <input type="text" id="txtSecondNum" placeholder="Second Number"> )
-                        * <input type="text" id="txtThirdNumb" placeholder="Third Number"> =</p>
+                        * <input type="text" id="txtThirdNum" placeholder="Third Number"> =</p>
 
                     <p><button type="button" 
                                id="btnSolve"
-                               onclick=""
+                               onclick="solveMiniEquation();"
                                class="fancy-button red-theme">
                                Solve Equation</button></p>
                 </form>
@@ -56,7 +56,7 @@
 
                        <p><button type="button"
                                   id="btnSummarize"
-                                  onclick=""
+                                  onclick="summarizeUser();"
                                   class="fancy-button green-theme">
                                   Summarize Me!</button></p>
                 </form>
@@ -64,5 +64,7 @@
                 <div id="userInfo"></div>
             </section>
         </main>
+
+        <script src="scripts/m6_form_handler.js"></script>
     </body>
 </html>
