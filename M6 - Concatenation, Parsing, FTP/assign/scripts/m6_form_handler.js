@@ -13,6 +13,6 @@ function summarizeUser() {
     var name = document.getElementById("txtName").value;
     var favColor = document.getElementById("selFavColor").value;
 
-    var output = "<p>Your name is: " + name + " and your favorite color is: " + favColor +".</p>";
+    var output = "<p>Your name is " + name + " and your favorite color is " + favColor +".</p>";
     document.getElementById("userInfo").innerHTML = output;
 }
