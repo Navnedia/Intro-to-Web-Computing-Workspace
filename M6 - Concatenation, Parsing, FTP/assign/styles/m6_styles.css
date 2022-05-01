@@ -1,13 +1,19 @@
 body {
     width: 400px;
+    margin-left: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 84%;
+}
+
+h1 {
+    padding-left: 10px;
 }
 
 .border-form {
     background-color: #d3d3d3;
     border: 5px solid #000000;
     padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: 15px;
 }
 
