@@ -1,9 +1,36 @@
 body {
     width: 400px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 84%;
 }
 
-input {
+.border-form {
+    background-color: #d3d3d3;
+    border: 5px solid #000000;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.small-input {
     font-size: 12px;
     width: 90px;
     height: 16px;
+}
+
+.format-output1 {
+    background-color: #0000ff;
+    color: #ffffff;
+    width: fit-content;
+}
+
+/* For some reason I couldn't figure out, my div section for the second
+   output had a border a lot wider than the content, and of course the 
+   border was always slightly visable even when there was no content. I
+   decided to solve both these issues by using the child combinator to
+   apply my border styles to the <p> tag that comes from the innerHTML
+   output; this way the border is the correct size, and it only appears
+   when there is content in the div.*/
+.format-output2 > p {
+    border: 2px dashed #000000;
+    width: fit-content;
 }
