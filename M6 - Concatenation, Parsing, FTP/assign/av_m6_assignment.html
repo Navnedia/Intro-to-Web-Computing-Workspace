@@ -1,10 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>Module 6 Assignment</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/form_styles.css">
+        <link rel="stylesheet" href="styles/m6_styles.css">
     </head>
     <body>
-        
+        <header>
+            <h1>Aiden V - M6 Assignment</h1>
+        </header>
+
+        <main>
+            <section class="border-form">
+                <h2>Mini Calculator</h2>
+                <p>Please enter three numbers. I will calculate the sum of the first 
+                    two numbers, then I will multiple the result by the third number:</p>
+
+                <form>
+                    <p>( <input type="text" id="txtFirstNum" placeholder="First Number">
+                        + <input type="text" id="txtSecondNum" placeholder="Second Number"> )
+                        * <input type="text" id="txtThirdNumb" placeholder="Third Number"> =</p>
+
+                    <p><button type="button" 
+                               id="btnSolve"
+                               onclick=""
+                               class="fancy-button red-theme">
+                               Solve Equation</button></p>
+                </form>
+
+                <div id="calculationResult"></div>
+            </section>
+
+            <section class="border-form">
+                <h2>About You</h2>
+                <form>
+                    <p><label for="txtName">Name:</label>
+                        <input type="text" id="txtName"></p>
+
+
+                    <p><label for="selFavColor">Favorite color:</label>
+                       <select id="selFavColor">
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="orange">Orange</option>
+                            <option value="pink">Pink</option>
+                            <option value="purple">Purple</option>
+                            <option value="black">Black</option>
+                            <option value="brown">Brown</option>
+                            <option value="gray">Gray</option>
+                            <option value="white">White</option>
+                       </select></p>
+
+                       <p><button type="button"
+                                  id="btnSummarize"
+                                  onclick=""
+                                  class="fancy-button green-theme">
+                                  Summarize Me!</button></p>
+                </form>
+
+                <div id="userInfo"></div>
+            </section>
+        </main>
     </body>
 </html>
