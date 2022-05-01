@@ -1,0 +1,7 @@
+function solveMiniEquation() {
+    
+}
+
+function summarizeUser() {
+
+}
