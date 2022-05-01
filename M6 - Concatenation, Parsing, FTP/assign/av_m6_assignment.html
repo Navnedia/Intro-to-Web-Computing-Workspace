@@ -3,7 +3,7 @@
     <head>
         <title>Module 6 Assignment</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="styles/form_styles.css">
+        <link rel="stylesheet" href="styles/button_styles.css">
         <link rel="stylesheet" href="styles/m6_styles.css">
     </head>
     <body>
@@ -18,9 +18,20 @@
                     two numbers, then I will multiple the result by the third number:</p>
 
                 <form>
-                    <p>( <input type="text" id="txtFirstNum" placeholder="First Number">
-                        + <input type="text" id="txtSecondNum" placeholder="Second Number"> )
-                        * <input type="text" id="txtThirdNum" placeholder="Third Number"> =</p>
+                    <p>( <input type="text" 
+                                id="txtFirstNum" 
+                                placeholder="First Number" 
+                                class="small-input">
+                                
+                        + <input type="text" 
+                                 id="txtSecondNum" 
+                                 placeholder="Second Number" 
+                                 class="small-input"> )
+
+                        * <input type="text" 
+                                 id="txtThirdNum" 
+                                 placeholder="Third Number" 
+                                 class="small-input"> =</p>
 
                     <p><button type="button" 
                                id="btnSolve"
@@ -29,11 +40,11 @@
                                Solve Equation</button></p>
                 </form>
 
-                <div id="calculationResult"></div>
+                <div id="calculationResult" class="format-output1"></div>
             </section>
 
             <section class="border-form">
-                <h2>About You</h2>
+                <h2>About You!</h2>
                 <form>
                     <p><label for="txtName">Name:</label>
                         <input type="text" id="txtName"></p>
@@ -61,7 +72,7 @@
                                   Summarize Me!</button></p>
                 </form>
 
-                <div id="userInfo"></div>
+                <div id="userInfo" class="format-output2"></div>
             </section>
         </main>
 
