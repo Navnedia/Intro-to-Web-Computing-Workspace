@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Aiden V - IT 130 Assignment 3</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="a3_styles.css">
+        <link rel="stylesheet" href="form.css">
+    </head> 
+    <body>
+        <h1>The Ball Bandits!</h1>
+
+        <!--It's my understanding decorative images don't require the alt attribute
+            to be filled, correct me if I'm wrong.-->
+        <img src="images/flaming_ball.png"
+             style="height: 50%; width: 50%;"
+             alt="">
+
+        <!--Blurb:-->
+        <p style="font-size: 80%; font-weight: bold;">
+            Working hard and playing hard to build your soccer skills!</p>
+
+        <h2>Sign Up Form</h2>
+        <form id="teamSignUpForm">
+            <div class="form-group">
+                <label for="txtName">Name</label>
+                <input type="text" maxlength="70" id="txtName">
+            </div>
+            
+            <div class="form-group">
+                <label for="txtPhoneNum">Phone Number</label>
+                <input type="text" maxlength="15" id="txtPhoneNum">
+            </div>
+
+            <!--I choose to set the values of my select box options to something simple
+                that will hopefully be easy to manage in a script. I felt this level
+                naming scheme is really all the description needed to understand what's
+                going on. If anything this simplicity makes it more clear and simple
+                to work with in this context.-->
+            <p><label for="selSkillLevel">
+                    Please select the skill level statement that best applies to you:</label></p>
+            <p><select id="selSkillLevel">
+                    <option value="level1">I have never played soccer</option>
+                    <option value="level2">I have played less than 1 year</option>
+                    <option value="level3">I have played 1-3 years</option>
+                    <option value="level4">I have played more than 3 years</option>
+                </select></p>
+
+            <!--I choose to place the labels for the radio buttons and check boxes after
+                to make the formating a little neater. It made more sense.-->
+            <p>Would you like to be considered for captain of the team?</p>
+            <p><input type="radio" name="considerTeamCaptain" id="radYesCaptain">
+                    <label for="radYesCaptain">Yes</label><br>
+                <input type="radio" name="considerTeamCaptain" id="radNoCaptain">
+                    <label for="radNoCaptain">No</label></p>
+                    
+            <p>What position would you prefer to play?</p>
+            <p><input type="checkbox" id="chkPreferForward">
+                    <label for="chkPreferForward">
+                        I prefer to play in a forward position</label><br>
+                <input type="checkbox" id="chkPreferDefense">
+                    <label for="chkPreferDefense">
+                        I prefer to play in a defensive position</label><br>
+                <input type="checkbox" id="chkNoPreference">
+                    <label for="chkNoPreference">
+                        I have no preference about position</label></p>
+            
+            <div class="form-group">
+                <label for="txtarSpecialRequest">Special Requests</label>
+                <textarea id="txtarSpecialRequest" cols="40" rows="6"></textarea>
+            </div>
+
+            <p><input type="button" 
+                      value="Submit my Information"
+                      id="btnSubmitInfo"
+                      style="height: 30px;"></p>
+        </form>
+
+        <!-- Research / Written Section -->
+        <!-- The term "programming convention" is used to define a set of general standards and practices
+            when writing code. The purpose of programming conventions is to promote consistent code throughout
+            a programming language, organization, or company. In this HTML context, programming conventions can
+            apply to the style we construct our code in using white space and indentations to make things extra clear.
+            This could relate to how we name our files with lower case and underscores, or how we structure
+            our folders. This term can even apply to how we name our form id attributes with prefixes in camelcase. 
+            
+            When we commit ourselves to maintaining these standards because it makes code more organized, clean, easier
+            to follow, and easier to debug/maintain for not just our future selfs, but also for others. 
+            Consistency can be the mark of a quality programmer.-->
+    </body>
+</html>
