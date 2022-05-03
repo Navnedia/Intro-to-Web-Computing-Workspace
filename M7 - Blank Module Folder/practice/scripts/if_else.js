@@ -28,3 +28,18 @@ function eligibleForBenifits() {
         document.getElementById("retireBenifitsOutput").innerHTML = "<p>Sorry, no benifits yet!</p>";
     }
 }
+
+function calculatePay() {
+    // Pull inputs and parse them to floats because user will likely want to enter decimals:
+    var hours = parseFloat(document.getElementById("txtHourWorked").value);
+    var payRate = parseFloat(document.getElementById("txtPayRate").value);
+    var salary = hours * payRate; // Calculate the salary.
+
+    // If they worked more than 40 hours, then add a bonus by increasing the salary by 10%.
+    if (hours > 40) {
+        salary += salary * 0.1;
+    }
+
+    salary = salary.toFixed(2); // Limit to 2 decimal places cause were dealing with a money amount.
+    document.getElementById("payOutput").innerHTML = "<p>You have earned $" + salary + " for this period.</p>"; 
+}
