@@ -7,11 +7,14 @@
 
         <style>
             body {
-                max-width: 400px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 90%;
+                max-width: 450px;
+                margin-left: 15px;
             }
 
-            .border-form {
-                background-color: #FFFFFF;
+            .small-input {
+                width: 90px;
             }
         </style>
     </head>
@@ -31,7 +34,7 @@
                         <input type="text" id="txtName"></p>
                     
                     <p><label for="txtAgeRental">Age:</label>
-                        <input type="text" id="txtAgeRental"></p>
+                        <input type="text" id="txtAgeRental" class="small-input"></p>
 
                     <p><Button type="button" 
                                 id="btnSubmitRent"
@@ -47,7 +50,7 @@
                 <h2>Hard Worker?</h2>
                 <form>
                     <p><label for="txtHours">Hours Worked:</label>
-                        <input type="text" id="txtHours"></p>
+                        <input type="text" id="txtHours" class="small-input"></p>
 
                     <p><Button type="button" 
                                 id="btnSubmitWork"
@@ -63,7 +66,7 @@
                 <h2>Eligible For Retirement Benifits?</h2>
                 <form>
                     <p><label for="txtAgeRetire">Age:</label>
-                        <input type="text" id="txtAgeRetire"></p>
+                        <input type="text" id="txtAgeRetire" class="small-input"></p>
 
                     <p><Button type="button" 
                                 id="btnSubmitRetire"
@@ -73,6 +76,25 @@
                 </form>
 
                 <div id="retireBenifitsOutput" class="form-output black-theme"></div>
+            </section>
+
+            <section class="border-form">
+                <h2>Pay Calculator</h2>
+                <form>
+                    <p><label for="txtHourWorked">How many hours did you work this week?</label>
+                        <input type="text" id="txtHourWorked" class="small-input"></p>
+
+                    <p><label for="txtPayRate">How much is your hourly pay rate?</label>
+                        <input type="text" id="txtPayRate" class="small-input"></p>
+
+                    <p><Button type="button" 
+                                id="btnSubmitPay"
+                                onclick="calculatePay();"
+                                class="fancy-button yellow-theme">
+                                Calculate Salary</Button></p>
+                </form>
+
+                <div id="payOutput" class="form-output black-theme"></div>
             </section>
         </main>
 
