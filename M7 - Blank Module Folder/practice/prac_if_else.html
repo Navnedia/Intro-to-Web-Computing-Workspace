@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JavaScript If Else Practice</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/form_styles.css">
+
+        <style>
+            body {
+                max-width: 400px;
+            }
+
+            .border-form {
+                background-color: #FFFFFF;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>JavaScript If Else Practice</h1>
+        </header>
+
+        <main>
+            <section class="border-form">
+                <h2>Car Rental Form</h2>
+                <form id="rentalForm">
+                    <p><label for="txtFirstName">First Name:</label>
+                        <input type="text" id="txtName"></p>
+
+                    <p><label for="txtLastName">Last Name:</label>
+                        <input type="text" id="txtName"></p>
+                    
+                    <p><label for="txtAgeRental">Age:</label>
+                        <input type="text" id="txtAgeRental"></p>
+
+                    <p><Button type="button" 
+                                id="btnSubmitRent"
+                                onclick="rentCar();"
+                                class="fancy-button teal-theme">
+                                Submit</Button></p>
+                </form>
+
+                <div id="rentalOutput" class="form-output"></div>
+            </section>
+
+            <section class="border-form">
+                <h2>Hard Worker?</h2>
+                <form>
+                    <p><label for="txtHours">Hours Worked:</label>
+                        <input type="text" id="txtHours"></p>
+
+                    <p><Button type="button" 
+                                id="btnSubmitWork"
+                                onclick="isHardWorker();"
+                                class="fancy-button red-theme">
+                                Submit</Button></p>
+                </form>
+
+                <div id="workOutputBox" class="form-output black-theme"></div>
+            </section>
+
+            <section class="border-form">
+                <h2>Eligible For Retirement Benifits?</h2>
+                <form>
+                    <p><label for="txtAgeRetire">Age:</label>
+                        <input type="text" id="txtAgeRetire"></p>
+
+                    <p><Button type="button" 
+                                id="btnSubmitRetire"
+                                onclick="eligibleForBenifits();"
+                                class="fancy-button green-theme">
+                                Submit</Button></p>
+                </form>
+
+                <div id="retireBenifitsOutput" class="form-output black-theme"></div>
+            </section>
+        </main>
+
+        <script src="scripts/if_else.js"></script>
+    </body>
+</html>
