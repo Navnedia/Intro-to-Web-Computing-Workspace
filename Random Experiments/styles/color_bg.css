@@ -1,6 +1,6 @@
 html, body {
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 99%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     user-select: none; /* Makes it so you can't accidentlly highlight the text */
@@ -15,7 +15,13 @@ html, body {
 }
 
 .title {
-    font-size: 400%;
+    font-size: 500%;
+}
+
+.counter {
+    font-size: 300%;
+    padding-left: 10px;
+    padding-left: 10px;
 }
 
 .contrast-text {
