@@ -7,96 +7,109 @@
 
         <style>
             body {
+                background-color: gray;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 font-size: 90%;
-                max-width: 450px;
                 margin-left: 15px;
             }
 
             .small-input {
                 width: 90px;
             }
+
+            .center-stack {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .border-form {
+                background-color: #FFFFFF;
+            }
         </style>
     </head>
     <body>
-        <header>
-            <h1>JavaScript If Else Practice</h1>
-        </header>
+        <div class="center-stack">
+            <header>
+                <h1>JavaScript If Else Practice</h1>
+            </header>
 
-        <main>
-            <section class="border-form">
-                <h2>Car Rental Form</h2>
-                <form id="rentalForm">
-                    <p><label for="txtFirstName">First Name:</label>
-                        <input type="text" id="txtName"></p>
+            <main>
+                <section class="border-form">
+                    <h2>Car Rental Form</h2>
+                    <form id="rentalForm">
+                        <p><label for="txtFirstName">First Name:</label>
+                            <input type="text" id="txtName"></p>
 
-                    <p><label for="txtLastName">Last Name:</label>
-                        <input type="text" id="txtName"></p>
-                    
-                    <p><label for="txtAgeRental">Age:</label>
-                        <input type="text" id="txtAgeRental" class="small-input"></p>
+                        <p><label for="txtLastName">Last Name:</label>
+                            <input type="text" id="txtName"></p>
+                        
+                        <p><label for="txtAgeRental">Age:</label>
+                            <input type="text" id="txtAgeRental" class="small-input"></p>
 
-                    <p><Button type="button" 
-                                id="btnSubmitRent"
-                                onclick="rentCar();"
-                                class="fancy-button teal-theme">
-                                Submit</Button></p>
-                </form>
+                        <p><Button type="button" 
+                                    id="btnSubmitRent"
+                                    onclick="rentCar();"
+                                    class="fancy-button teal-theme">
+                                    Submit</Button></p>
+                    </form>
 
-                <div id="rentalOutput" class="form-output"></div>
-            </section>
+                    <div id="rentalOutput" class="form-output"></div>
+                </section>
 
-            <section class="border-form">
-                <h2>Hard Worker?</h2>
-                <form>
-                    <p><label for="txtHours">Hours Worked:</label>
-                        <input type="text" id="txtHours" class="small-input"></p>
+                <section class="border-form">
+                    <h2>Hard Worker?</h2>
+                    <form>
+                        <p><label for="txtHours">Hours Worked:</label>
+                            <input type="text" id="txtHours" class="small-input"></p>
 
-                    <p><Button type="button" 
-                                id="btnSubmitWork"
-                                onclick="isHardWorker();"
-                                class="fancy-button red-theme">
-                                Submit</Button></p>
-                </form>
+                        <p><Button type="button" 
+                                    id="btnSubmitWork"
+                                    onclick="isHardWorker();"
+                                    class="fancy-button red-theme">
+                                    Submit</Button></p>
+                    </form>
 
-                <div id="workOutputBox" class="form-output black-theme"></div>
-            </section>
+                    <div id="workOutputBox" class="form-output black-theme"></div>
+                </section>
 
-            <section class="border-form">
-                <h2>Eligible For Retirement Benifits?</h2>
-                <form>
-                    <p><label for="txtAgeRetire">Age:</label>
-                        <input type="text" id="txtAgeRetire" class="small-input"></p>
+                <section class="border-form">
+                    <h2>Eligible For Retirement Benifits?</h2>
+                    <form>
+                        <p><label for="txtAgeRetire">Age:</label>
+                            <input type="text" id="txtAgeRetire" class="small-input"></p>
 
-                    <p><Button type="button" 
-                                id="btnSubmitRetire"
-                                onclick="eligibleForBenifits();"
-                                class="fancy-button green-theme">
-                                Submit</Button></p>
-                </form>
+                        <p><Button type="button" 
+                                    id="btnSubmitRetire"
+                                    onclick="eligibleForBenifits();"
+                                    class="fancy-button green-theme">
+                                    Submit</Button></p>
+                    </form>
 
-                <div id="retireBenifitsOutput" class="form-output black-theme"></div>
-            </section>
+                    <div id="retireBenifitsOutput" class="form-output black-theme"></div>
+                </section>
 
-            <section class="border-form">
-                <h2>Pay Calculator</h2>
-                <form>
-                    <p><label for="txtHourWorked">How many hours did you work this week?</label>
-                        <input type="text" id="txtHourWorked" class="small-input"></p>
+                <section class="border-form">
+                    <h2>Pay Calculator</h2>
+                    <form>
+                        <p><label for="txtHourWorked">How many hours did you work this week?</label>
+                            <input type="text" id="txtHourWorked" class="small-input"></p>
 
-                    <p><label for="txtPayRate">How much is your hourly pay rate?</label>
-                        <input type="text" id="txtPayRate" class="small-input"></p>
+                        <p><label for="txtPayRate">How much is your hourly pay rate?</label>
+                            <input type="text" id="txtPayRate" class="small-input"></p>
 
-                    <p><Button type="button" 
-                                id="btnSubmitPay"
-                                onclick="calculatePay();"
-                                class="fancy-button yellow-theme">
-                                Calculate Salary</Button></p>
-                </form>
+                        <p><Button type="button" 
+                                    id="btnSubmitPay"
+                                    onclick="calculatePay();"
+                                    class="fancy-button yellow-theme">
+                                    Calculate Salary</Button></p>
+                    </form>
 
-                <div id="payOutput" class="form-output black-theme"></div>
-            </section>
-        </main>
+                    <div id="payOutput" class="form-output black-theme"></div>
+                </section>
+            </main>
+        </div> <!--End of 'center-stack' div-->
 
         <script src="scripts/if_else.js"></script>
     </body>
