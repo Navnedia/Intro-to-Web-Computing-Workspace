@@ -5,10 +5,16 @@ function randColorBG(logClick) {
     document.body.style.backgroundColor = hexCode;
 
     if (logClick) {addClick();} // This allows us to not log page reloads as clicks.
+    updateCounter();
 }
 
 function addClick() {
     var clicks = parseInt(localStorage.getItem("clicks"));
     if (isNaN(clicks)) {clicks = 0;}
     localStorage.setItem("clicks", ++clicks);
+}
+
+function updateCounter() {
+    var clicks = localStorage.getItem("clicks");
+    document.getElementById("clickCounter").innerHTML = clicks;
 }
