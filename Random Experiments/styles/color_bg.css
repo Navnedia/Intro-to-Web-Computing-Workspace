@@ -29,7 +29,12 @@ html, body {
     mix-blend-mode:  difference;
 }
 
-.clickable-bg {
+.clickable-layer {
     height: 100%;
     width: 100%;
+}
+
+.invisible-button {
+    border: none;
+    background-color: transparent;
 }
