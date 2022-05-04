@@ -1,6 +1,9 @@
 html, body {
     height: 100%;
     width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    user-select: none; /* Makes it so you can't accidentlly highlight the text */
 }
 
 .center {
@@ -12,12 +15,12 @@ html, body {
 }
 
 .title {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
     font-size: 400%;
-    color: #FFFFFF;
+}
+
+.contrast-text {
+    color: #ffffff;
     mix-blend-mode:  difference;
-    user-select: none; /* Makes it so you can't accidentlly highlight the text */
 }
 
 .clickable-bg {
