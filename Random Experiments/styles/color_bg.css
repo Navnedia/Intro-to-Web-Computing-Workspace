@@ -1,7 +1,7 @@
 html, body {
-    margin: 0px;
-    padding: 0px;
-    height: 96.8%;
+    /* margin: 0px;
+    padding: 0px; */
+    height: 96%;
     width: 99%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
@@ -32,8 +32,8 @@ html, body {
 }
 
 .clickable-layer {
-    margin: 0px;
-    padding: 0px;
+    /* margin: 0px;
+    padding: 0px; */
     height: 100%;
     width: 100%;
 }
