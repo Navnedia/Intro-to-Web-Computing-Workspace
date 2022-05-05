@@ -72,7 +72,7 @@
             function getBMI() {
                 var height = parseFloat(document.getElementById("txtHeight").value);
                 var weight = parseFloat(document.getElementById("txtWeight").value);
-                var BMI = (weight * 703) / Math.pow(height, 2);
+                var BMI = (weight * 703) / (height * height); // Could also do Math.pow(height, 2).
 
                 // Handling bad inputs:
                 if (isNaN(height)) {height = 0;}
