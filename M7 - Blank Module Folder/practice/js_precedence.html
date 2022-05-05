@@ -38,6 +38,26 @@
 
                 <div id="tempConversionResult" class="form-output black-theme"></div>
             </section>
+
+            <section class="border-form">
+                <h2>Calculate BMI</h2>
+
+                <form>
+                    <p><label for="txtHeight">Enter your height in inches:</label>
+                        <input type="text" id="txtHeight" class="small-input"></p>
+
+                    <p><label for="txtWeight">Enter your weight in pounds:</label>
+                        <input type="text" id="txtWeight" class="small-input"></p>
+
+                    <p><button type="button"
+                               id="btnCalcBMI"
+                               onclick="getBMI();"
+                               class="fancy-button teal-theme">
+                               Calculate</button></p>
+                </form>
+
+                <div id="outputBMI" class="form-output black-theme"></div>
+            </section>
         </main>
 
         <script>
@@ -47,6 +67,22 @@
                 Celsius = Celsius.toFixed(2);
 
                 document.getElementById("tempConversionResult").innerHTML = "<p>" + Celsius + " &deg;F</p>";
+            }
+
+            function getBMI() {
+                var height = parseFloat(document.getElementById("txtHeight").value);
+                var weight = parseFloat(document.getElementById("txtWeight").value);
+                var BMI = (weight * 703) / Math.pow(height, 2);
+
+                // Handling bad inputs:
+                if (isNaN(height)) {height = 0;}
+                if (isNaN(weight)) {weight = 0;}
+                if (isNaN(BMI)) {BMI = 0;}
+
+                BMI = BMI.toFixed(2); // Limit to 2 decimal places.
+                var outputString = "<p>For a weight of " + weight + " pounds, and a height of "
+                                     + height + " inches, your BMI is " + BMI + ".</p>";
+                document.getElementById("outputBMI").innerHTML = outputString;
             }
         </script>
     </body>
