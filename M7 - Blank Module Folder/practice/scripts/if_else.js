@@ -40,6 +40,9 @@ function calculatePay() {
         salary += salary * 0.1;
     }
 
+    // When one or more input is missing or not a number, set answer to zero for nice displaying.
+    if (isNaN(salary)) {salary = 0;}
+
     salary = salary.toFixed(2); // Limit to 2 decimal places cause were dealing with a money amount.
     document.getElementById("payOutput").innerHTML = "<p>You have earned $" + salary + " for this period.</p>"; 
 }
