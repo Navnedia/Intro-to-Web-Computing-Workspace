@@ -35,7 +35,7 @@ function clearCounter() {
 function updateCounter() {
     var clicks = localStorage.getItem("clicks"); // Get value from local storage.
 
-    // Milestones modifiers:
+    // Milestones modifiers (to uncomment change innerHTML output variable ):
     // var counterString = clicks;
     // if (clicks == 69 || clicks == 420) {counterString += " Nice!";}
 
