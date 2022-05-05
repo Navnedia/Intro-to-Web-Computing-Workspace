@@ -34,5 +34,10 @@ function clearCounter() {
 
 function updateCounter() {
     var clicks = localStorage.getItem("clicks"); // Get value from local storage.
+
+    // Milestones modifiers:
+    // var counterString = clicks;
+    // if (clicks == 69 || clicks == 420) {counterString += " Nice!";}
+
     document.getElementById("clickCounter").innerHTML = clicks; // Set innnerHTML counter to the retived value.
 }
