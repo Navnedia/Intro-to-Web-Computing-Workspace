@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Precedence</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/form_styles.css">
+
+        <style>
+            body {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                max-width: fit-content;
+            }
+
+            .small-input {
+                width: 90px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>JavaScript Precedence Practice</h1>
+        </header>
+
+        <main>
+            <section class="border-form">
+                <h2>Temperature Converter</h2>
+
+                <form>
+                    <p><label for="txtFahr">Enter value in Fahrenheit (&deg;F):</label>
+                        <input type="text" id="txtFahr" class="small-input"></p>
+
+                    <p><button type="button"
+                               id="btnConvert"
+                               onclick="tempConvert();"
+                               class="fancy-button red-theme">
+                               Convert</button></p>
+                </form>
+
+                <div id="tempConversionResult" class="form-output black-theme"></div>
+            </section>
+        </main>
+
+        <script>
+            function tempConvert() {
+                var fahrenheit = parseFloat(document.getElementById("txtFahr").value);
+                var Celsius = (fahrenheit - 32) * 5 / 9;
+                Celsius = Celsius.toFixed(2);
+
+                document.getElementById("tempConversionResult").innerHTML = "<p>" + Celsius + " &deg;F</p>";
+            }
+        </script>
+    </body>
+</html>
