@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dice Roll</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/form_styles.css">
+
+        <style>
+            body {
+                width: 100%;
+                height: 100%;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            
+            .center {
+                display: grid;
+                place-items: center;
+            }
+            
+            .small-input {
+                font-size: 12px;
+                width: 70px;
+                height: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="center">
+            <header>
+                <h1>Random Dice Roll</h1>
+            </header>
+
+            <main>
+                <section class="border-form">
+                    <h2>Roll Two Dice</h2>
+
+                    <p><label for="txtNumSides">How many sides on the dice?</label>
+                        <input type="text" 
+                               id="txtSides"
+                               value="6"
+                               class="small-input"></p>
+
+                    <form>
+                        <button type="button"
+                            id="btnRoll"
+                            onclick="roll2();"
+                            class="fancy-button teal-theme">
+                            Roll Dice!</button>
+                    </form>
+
+                    <div id="roll2Result" class="form-output yellow-theme"></div>
+                </section>
+            </main>
+        </div>
+
+        <script src="scripts/dice.js"></script>
+    </body>
+</html>

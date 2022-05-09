@@ -1,0 +1,65 @@
+.border-form {
+    border: 5px solid #000000;
+    padding: 0px 15px 15px 15px;
+    margin-bottom: 15px;
+}
+
+.form-output {
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.fancy-button {
+    border: 3px solid #000000;
+    border-radius: 10px;
+    font-weight: bold;
+    height: 30px;
+}
+
+.red-theme {
+    background-color: #cd2701;
+    color: #ffffff;
+}
+
+.blue-theme {
+    background-color: #0000ff;
+    color: #ffffff;
+}
+
+.green-theme {
+    background-color: #008000;
+    color: #ffffff;
+}
+
+.teal-theme {
+    background-color: #096691;
+    color: #ffffff;
+}
+.purple-theme {
+    background-color: #b200ee;
+    color: #ffffff;
+}
+
+.yellow-theme {
+    background-color: #e7cd01;
+}
+
+.orange-theme {
+    background-color: #f97f29;
+}
+
+.pink-theme {
+    background-color: #f54b8a;
+}
+
+.gray-theme {
+    background-color: #777b7e;
+    color: #ffffff;
+}
+
+.black-theme {
+    background-color: #000000;
+    color: #ffffff;
+}
