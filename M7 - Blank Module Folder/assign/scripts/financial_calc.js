@@ -5,7 +5,7 @@ function getIRAContribution() {
 
     // Calculate contribution:
     var contribution = income * (investPercent / 100); // P.S I know the parentheses aren't needed here, I just include them for clarity.
-    contribution = contribution.toFixed(0);
+    contribution = contribution.toFixed(0); // Chop off decimals because we want the contibution to be a whole number.
 
     var output;
     if (income < 140000) { // Eligible (income below $140,000):
