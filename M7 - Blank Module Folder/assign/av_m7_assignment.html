@@ -3,11 +3,13 @@
     <head>
         <title>Financial Fenoms Inc.</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="styles/form_styles.css">
+        <link rel="stylesheet" href="styles/button_styles.css">
+        <link rel="stylesheet" href="styles/m7_styles.css">
     </head>
     <body>
         <header>
             <h1>Financial Fenoms Inc.</h1>
+            <hr>
         </header>
 
         <main>
@@ -24,13 +26,13 @@
                         <input type="text" id="txtInvestPercent"></p>
 
                     <p><button type="button" 
-                               id="btnCalculateIRA"
-                               onclick="getIRAContribution();"
-                               class="fancy-button teal-theme">
-                               Calculate my Contribution</button></p>
+                            id="btnCalculateIRA"
+                            onclick="getIRAContribution();"
+                            class="fancy-button green-theme">
+                            Calculate my Contribution</button></p>
                 </form>
 
-                <div id="outputIRAContribution"></div>
+                <div id="outputIRAContribution" class="form-output"></div>
             </section>
         </main>
 
