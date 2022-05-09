@@ -1,7 +1,10 @@
 function getIRAContribution() {
+    // Get inputs:
     var income = parseFloat(document.getElementById("txtIncome").value);
     var investPercent = parseFloat(document.getElementById("txtInvestPercent").value);
-    var contribution = income * (investPercent / 100); // P.S I understand the parentheses aren't necessary here, I'm just including them for clarity.
+
+    // Calculate contribution:
+    var contribution = income * (investPercent / 100); // P.S I know the parentheses aren't needed here, I just include them for clarity.
     contribution = contribution.toFixed(0);
 
     var output;
