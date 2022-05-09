@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Financial Fenoms Inc.</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/form_styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Financial Fenoms Inc.</h1>
+        </header>
+
+        <main>
+            <section>
+                <h2>Roth IRA Estimator</h2>
+
+                <form>
+                    <p><label for="txtIncome">
+                            Income? (Must be less than $140,000):</label>
+                        <input type="text" id="txtIncome"></p>
+
+                    <p><label for="txtInvestPercent">
+                            Percent to invest (Enter a value in % less than 4.2):</label>
+                        <input type="text" id="txtInvestPercent"></p>
+
+                    <p><button type="button" 
+                               id="btnCalculateIRA"
+                               onclick="getIRAContribution();"
+                               class="fancy-button teal-theme">
+                               Calculate my Contribution</button></p>
+                </form>
+
+                <div id="outputIRAContribution"></div>
+            </section>
+        </main>
+
+        <script src="scripts/finacial_cal.js"></script>
+    </body>
+</html>
