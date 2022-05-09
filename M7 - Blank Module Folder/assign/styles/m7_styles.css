@@ -1,0 +1,30 @@
+body {
+    width: 400px;
+    border: 3px solid #008000;
+    border-radius: 30px;
+    padding: 45px;
+    margin: 25px;
+}
+
+.form-output {
+    background-color: #ffffe0;
+    font-weight: bold;
+    width: fit-content;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #000000;
+}
+
+/*
+ * It was a little unclear on where you wanted this comment, but I
+ * figured here made the most sense. Padding and margin can at first
+ * glace seem the same, but there is a key diffrence you must understand
+ * to make effective use of the two CSS properties. Both padding and margin
+ * allow you do add a specified spacing around something. The diffrence
+ * between the two is that padding spesifies the spacing between the content
+ * and the border (even when there is no border), then margins are used to
+ * specifiy the space outside the border sperating the block from other things.
+ */
