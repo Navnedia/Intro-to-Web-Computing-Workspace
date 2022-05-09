@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>NaN Practice</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/form_styles.css">
+
+        <style>
+            body {
+                width: 100%;
+                height: 100%;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            
+            .center {
+                display: grid;
+                place-items: center;
+            }
+            
+            .small-input {
+                font-size: 12px;
+                width: 70px;
+                height: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="center">
+            <header>
+                <h1>isNaN() Practice</h1>
+            </header>
+            
+            <main>
+                <section class="border-form">
+                    <h2>Add Two Numbers</h2>
+
+                    <p><input type="text" 
+                               id="txtNum1"
+                               placeholder="Number 1"
+                               class="small-input"> +
+
+                        <input type="text" 
+                               id="txtNum2"
+                               placeholder="Number 2"
+                               class="small-input"></p>
+
+                    <form>
+                        <button type="button"
+                            id="btnCalculate"
+                            onclick="getSum() ;"
+                            class="fancy-button red-theme">
+                            Calculate</button>
+                    </form>
+
+                    <div id="calcResult" class="form-output yellow-theme"></div>
+                </section>
+            </main>
+        </div>
+
+        <script>
+            function getSum() {
+                var num1 = parseFloat(document.getElementById("txtNum1").value);
+                var num2 = parseFloat(document.getElementById("txtNum2").value);
+
+                if (isNaN(num1) || isNaN(num2)) {
+                    alert("Please enter vaild numrical values!");
+                } else {
+                    var sum = num1 + num2;
+                    document.getElementById("calcResult").innerHTML = "<p>Result: " + sum + "</p>"; 
+                }
+            }
+        </script>
+    </body>
+</html>
