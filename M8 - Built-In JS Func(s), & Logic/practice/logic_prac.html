@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dice Roll</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/form_styles.css">
+
+        <style>
+            body {
+                width: 100%;
+                height: 100%;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            
+            .center {
+                display: grid;
+                place-items: center;
+            }
+            
+            .small-input {
+                font-size: 12px;
+                width: 70px;
+                height: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="center">
+            <header>
+                <h1>Logical Operator Practice</h1>
+            </header>
+
+            <main>
+                <section class="border-form">
+                    <h2>Pay the Meter?</h2>
+
+                    <p><label for="selDay">Day of the week:</label>
+                        <select id="selDay">
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                            <option value="Sunday">Sunday</option>
+                        </select></p>
+
+                    <form>
+                        <button type="button"
+                            id="btnSubmit"
+                            onclick="getPayMeter();"
+                            class="fancy-button yellow-theme">
+                            Submit</button>
+                    </form>
+
+                    <div id="meterPayResult" class="form-output black-theme"></div>
+                </section>
+            </main>
+        </div>
+
+        <script>
+            function getPayMeter() {
+                var day = document.getElementById("selDay").value;
+
+                var output;
+                if (day == "Sunday") {
+                    output = "<p>No need to pay the meter!</p>";
+                } else {
+                    output = "<p>Beter get some quarters!</p>";
+                }
+
+                document.getElementById("meterPayResult").innerHTML = output;
+            }
+        </script>
+    </body>
+</html>
