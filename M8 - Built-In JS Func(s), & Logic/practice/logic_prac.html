@@ -47,7 +47,7 @@
 
                     <form>
                         <button type="button"
-                            id="btnSubmit"
+                            id="btnSubmitMeter"
                             onclick="getPayMeter();"
                             class="fancy-button yellow-theme">
                             Submit</button>
@@ -55,22 +55,37 @@
 
                     <div id="meterPayResult" class="form-output black-theme"></div>
                 </section>
+
+                <section class="border-form">
+                    <h2>Can I Vote?</h2>
+
+                    <p><label for="txtAge">Age:</label>
+                        <input type="text"
+                               id="txtAge"
+                               class="small-input"></p>
+
+                    <p><input type="checkbox" id="chkRegistered">
+                        <label for="chkRegistered">I'm registered to vote</label></p>
+
+                    <p><input type="checkbox" id="chkCitizen">
+                        <label for="chkCitizen">I'm a US Citizen</label></p>
+
+                    <p><input type="checkbox" id="chkNotFelon">
+                        <label for="chkNotFelon">I'm NOT a Felon</label></p>
+
+                    <form>
+                        <button type="button"
+                            id="btnSubmitVote"
+                            onclick="canVote();"
+                            class="fancy-button purple-theme">
+                            Submit</button>
+                    </form>
+
+                    <div id="canVoteResult" class="form-output black-theme"></div>
+                </section>
             </main>
         </div>
 
-        <script>
-            function getPayMeter() {
-                var day = document.getElementById("selDay").value;
-
-                var output;
-                if (day == "Sunday") {
-                    output = "<p>No need to pay the meter!</p>";
-                } else {
-                    output = "<p>Beter get some quarters!</p>";
-                }
-
-                document.getElementById("meterPayResult").innerHTML = output;
-            }
-        </script>
+        <script src="scripts/logic_prac.js"></script>
     </body>
 </html>
