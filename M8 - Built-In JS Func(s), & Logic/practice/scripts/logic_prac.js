@@ -2,7 +2,7 @@ function getPayMeter() {
     var day = document.getElementById("selDay").value;
 
     var output;
-    if (day == "Sunday") {
+    if (day == "Sunday" || day == "Saturday") {
         output = "<p>No need to pay the meter!</p>";
     } else {
         output = "<p>Beter get some quarters!</p>";
