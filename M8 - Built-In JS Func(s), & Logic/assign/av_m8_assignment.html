@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Puny Postal Inc</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <header>
+            <h1>Puny Postal Inc</h1>
+        </header>
+
+        <main>
+            <section>
+                <h2>Postage Cost Estimator</h2>
+
+                <form id="postageCalculator">
+                    <p><label for="txtWeight">Weight:</label>
+                        <input type="text" id="txtWeight">
+                    
+                        <select id="selWeightUnit">
+                            <option value="grams">Grams</option>
+                            <option value="ounces">Ounces</option>
+                        </select></p>
+
+                    <p><label for="selDestination">Destination Country:</label>
+                        <select id="selDestination">
+                            <option value="US">United States</option>
+                            <option value="Mexico">Mexico</option>
+                        </select></p>
+
+                    <p><label for="selInsurance">
+                            Would you like insurance? (10% for US, 20% for Mexico)</label>
+                        <select id="selInsurance">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select></p>
+
+                    <p><button type="button" 
+                                id="btnCalculate"
+                                onclick=""
+                                class="">
+                                Calculate Shipping Cost</button></p>
+                </form>
+
+                <div id="postageCostOutput"></div>
+            </section>
+        </main>
+    </body>
+</html>
