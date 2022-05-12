@@ -1,14 +1,15 @@
 .border-form {
+    background-color: #FFFFFF;
     border: 5px solid #000000;
-    padding: 0px 15px 15px 15px;
+    border-radius: 25px;
+    padding: 0px 15px 0px 15px;
     margin-bottom: 15px;
 }
 
 .form-output {
-    width: fit-content;
-    padding-left: 10px;
-    padding-right: 10px;
+    text-align: center;
     font-weight: bold;
+    border-radius: 10px;
 }
 
 .fancy-button {
