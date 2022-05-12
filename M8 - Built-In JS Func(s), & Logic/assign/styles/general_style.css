@@ -7,4 +7,6 @@ body {
     display: grid;
     place-items: center;
     background-color: #778899;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 90%;
 }
