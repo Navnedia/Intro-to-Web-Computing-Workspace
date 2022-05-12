@@ -3,13 +3,30 @@
     <head>
         <title>Puny Postal Inc</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/form_styles.css">
+
+        <style>
+            html, body {
+                width: 100%;
+                height: 100%;
+            }
+
+            body {
+                display: grid;
+                place-items: center;
+            }
+        </style>
     </head>
     <body>
-        <header>
+        <!-- <header>
             <h1>Puny Postal Inc</h1>
-        </header>
+        </header> -->
 
         <main>
+            <header>
+                <h1>Puny Postal Inc</h1>
+            </header>
+
             <section>
                 <h2>Postage Cost Estimator</h2>
 
@@ -37,13 +54,15 @@
 
                     <p><button type="button" 
                                 id="btnCalculate"
-                                onclick=""
-                                class="">
+                                onclick="calculatShipping();"
+                                class="fancy-button red-theme">
                                 Calculate Shipping Cost</button></p>
                 </form>
 
-                <div id="postageCostOutput"></div>
+                <div id="postageCostOutput" class="form-output teal-theme"></div>
             </section>
+
+            <script src="scripts/shipping_calc.js"></script>
         </main>
     </body>
 </html>
