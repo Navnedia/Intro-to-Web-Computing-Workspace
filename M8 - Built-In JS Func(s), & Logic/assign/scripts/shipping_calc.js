@@ -5,6 +5,11 @@ function calculatShipping() {
     var insurance = document.getElementById("selInsurance").value;
     var shippingCost;
 
+    if (isNaN(weight)) {
+        alert("Please enter a numerical in the weight field");
+        return;
+    }
+
     if (weightUnit == "grams") { // Weight is in grams:
         shippingCost = weight * 0.08;
     } else { // Weight is in ounces:
