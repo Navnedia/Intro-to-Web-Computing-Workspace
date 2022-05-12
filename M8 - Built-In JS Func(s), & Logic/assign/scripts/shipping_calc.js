@@ -1,4 +1,4 @@
-function calculatShipping() {
+function calculateShipping() {
     // Get user inputs:
     var weight = parseFloat(document.getElementById("txtWeight").value);
     var weightUnit = document.getElementById("selWeightUnit").value;
