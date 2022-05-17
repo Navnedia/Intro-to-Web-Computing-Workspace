@@ -6,7 +6,8 @@
 }
 
 .form-output {
-    width: fit-content;
+    text-align: center;
+    border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
     font-weight: bold;
