@@ -42,10 +42,11 @@
                 <form>
                     <p><label for="selTeam">Select sports team:</label>
                         <select id="selTeam" onclick="checkTeam();">
-                            <option value="Blank">Choose One</option>
+                            <option value="choose">Choose One</option>
                             <option value="Cubs">Cubs</option>
-                            <option value="Sox">Sox</option>
+                            <option value="White Sox">Sox</option>
                             <option value="Bears">Bears</option>
+                            <option value="Bulls">Bulls</option>
                             <option value="Blackhawks">Blackhawks</option>
                             <option value="NA">None, I hate sports!</option>
                         </select></p>
@@ -82,7 +83,7 @@
                 var team = document.getElementById("selTeam").value;
                 var output;
 
-                if (team == "Blank") {
+                if (team == "choose") {
                     return;
                 } else if (team == "NA") {
                     output = "<p>Congrats, you picked the only correct answer!</p>";
