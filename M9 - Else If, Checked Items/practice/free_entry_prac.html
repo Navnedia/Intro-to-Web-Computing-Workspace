@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Free Text Entry Practice</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/form_styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Eliminating Free Text Entry</h1>
+        </header>
+
+        <main>
+            <section class="border-form">
+                <h2>Do I need to pay the meter?</h2>
+
+                <form>
+                    <p><label for="selDayOfWeek">Select the day of the week:</label>
+                        <select id="selDayOfWeek">
+                            <option value="Su">Sunday</option>
+                            <option value="M">Monday</option>
+                            <option value="Tu">Tuesday</option>
+                            <option value="W">Wednesday</option>
+                            <option value="Th">Thursday</option>
+                            <option value="F">Friday</option>
+                            <option value="Sa">Saturday</option>
+                        </select></p>
+
+                        <p><button type="button"
+                                   id="btnCheckParking"
+                                   onclick="getPayMeter();"
+                                   class="fancy-button teal-theme">
+                                   Check</button></p>
+                </form>
+
+                <div id="payMeterResult" class="form-output"></div>
+            </section>
+        </main>
+
+        <script>
+            function getPayMeter() {
+                var dayOfWeek = document.getElementById("selDayOfWeek").value;
+                var resultsDiv = document.getElementById("payMeterResult");
+
+                var outputStr;
+                if (dayOfWeek == "Su") {
+                    // It's Sunday:
+                    resultsDiv.classList.remove("red-theme"); // Remove the opposite color (red) theme if present.
+                    resultsDiv.classList.add("green-theme"); // Add the green theme.
+                    outputStr = "<p>You DON'T need to pay the meter!</p>";
+                } else {
+                    // Not Sunday:
+                    resultsDiv.classList.remove("green-theme"); // Remove the opposite color (green) theme if present.
+                    resultsDiv.classList.add("red-theme"); // Add the red theme.
+                    outputStr = "<p>You MUST need to pay the meter!</p>";
+                }
+
+                resultsDiv.innerHTML = outputStr;
+            }
+        </script>
+    </body>
+</html>
