@@ -15,8 +15,8 @@
                 <h2>Do I need to pay the meter?</h2>
 
                 <form>
-                    <p><label for="selDayOfWeek">Select the day of the week:</label>
-                        <select id="selDayOfWeek">
+                    <p><label for="selParkingDay">Select the day of the week:</label>
+                        <select id="selParkingDay">
                             <option value="Su">Sunday</option>
                             <option value="M">Monday</option>
                             <option value="Tu">Tuesday</option>
@@ -53,6 +53,26 @@
                 </form>
 
                 <div id="sportsTeamResult" class="form-output yellow-theme"></div>
+            </section>
+
+            <section class="border-form">
+                <h2>Motivational Message</h2>
+
+                <form>
+                    <p><label for="selMotivatinDay">Select the day of the week:</label>
+                        <select id="selMotivatinDay" onclick="getMotivation();">
+                            <option value="choose">Choose One</option>
+                            <option value="Su">Sunday</option>
+                            <option value="M">Monday</option>
+                            <option value="Tu">Tuesday</option>
+                            <option value="W">Wednesday</option>
+                            <option value="Th">Thursday</option>
+                            <option value="F">Friday</option>
+                            <option value="Sa">Saturday</option>
+                        </select></p>
+                </form>
+
+                <div id="motivationOutput" class="form-output yellow-theme"></div>
             </section>
         </main>
 

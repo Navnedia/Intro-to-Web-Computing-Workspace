@@ -1,5 +1,5 @@
 function getPayMeter() {
-    var dayOfWeek = document.getElementById("selDayOfWeek").value;
+    var dayOfWeek = document.getElementById("selParkingDay").value;
     var resultsDiv = document.getElementById("payMeterResult");
 
     var outputStr;
@@ -33,4 +33,31 @@ function checkTeam() {
     }
 
     document.getElementById("sportsTeamResult").innerHTML = output;
+}
+
+function getMotivation() {
+    var dayOfWeek = document.getElementById("selMotivatinDay").value;
+    var output;
+
+    if (dayOfWeek == "choose") {
+        // No selection made:
+        /* Notice that this form has a slightly diffrent behaviour when 
+            you change your selection back to choose. I left this to 
+            show options.*/
+        output = "";
+    } else if (dayOfWeek == "Su" || dayOfWeek == "Sa") {
+        // Sunday or Saturday:
+        output = "<p>Have a great weekend!</p>";
+    } else if (dayOfWeek == "M") {
+        // Monday Message:
+        output = "<p>Hope you had a good weekend</p>";
+    } else if (dayOfWeek == "F") {
+        // Friday Message:
+        output = "<p>TGIF!</p>";
+    } else {
+        // Week Day (Tu - Thu) Message:
+        output = "<p>Mid-week Blahs</p>";
+    }
+
+    document.getElementById("motivationOutput").innerHTML = output;
 }
