@@ -5,15 +5,11 @@ function getPayMeter() {
     var outputStr;
     if (dayOfWeek == "Su") {
         // It's Sunday:
-        resultsDiv.classList.remove("red-theme"); // Remove the opposite color (red) theme if present.
-        resultsDiv.classList.add("green-theme"); // Add the green theme.
-
+        resultsDiv.classList.replace("red-theme", "green-theme"); // Swap red theme to green.
         outputStr = "<p>You DON'T need to pay the meter!</p>";
     } else {
         // Not Sunday:
-        resultsDiv.classList.remove("green-theme"); // Remove the opposite color (green) theme if present.
-        resultsDiv.classList.add("red-theme"); // Add the red theme.
-
+        resultsDiv.classList.replace("green-theme", "red-theme"); // Swap green theme to red.
         outputStr = "<p>You MUST need to pay the meter!</p>";
     }
 
