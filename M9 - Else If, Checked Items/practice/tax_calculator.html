@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Checkbox & Radio Button Practice</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/form_styles.css">
+    </head>
+    <body></body>
+        <main>
+            <section class="border-form">
+                <header>
+                    <h2>Tax Calculator</h2>
+                </header>
+
+                <form>
+                    <p><label for="txtIncome">Income over the past year: $</label>
+                        <input type="text" id="txtIncome" class="small-input"></p>
+
+                    
+                    <p>Select your income range:</p>
+                    <p><input type="radio" name="incomeBracket" id="radLevel1">
+                            <label for="radLevel1">Less than $30K</label><br>
+                        <input type="radio" name="incomeBracket" id="radLevel2">
+                            <label for="radLevel2">Between $30K and below $50K</label><br>
+                        <input type="radio" name="incomeBracket" id="radLevel3">
+                            <label for="radLevel3">Between $50 and below $100K</label><br>
+                        <input type="radio" name="incomeBracket" id="radLevel4">
+                            <label for="radLevel4">$100K plus</label></p>
+
+                        <p><button type="button"
+                                   id="btnCalctaxes"
+                                   onclick="getTaxInfo();"
+                                   class="fancy-button green-theme">
+                                   Calculate my taxes</button></p>
+                </form>
+
+                <div id="taxInfo" class="form-output yellow-theme"></div>
+            </section>
+        </main>
+
+        <script src="scripts/tax_calc.js"></script>
+    </body>
+</html>
