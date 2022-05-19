@@ -55,21 +55,21 @@
                 <h2>Where are you traveling?</h2>
 
                 <form>
-                    <p><input type="radio" name="favColor" id="radRed" value="red">
-                            <label for="radRed">Red</label><br>
-                        <input type="radio" name="favColor" id="radGreen" value="green">
-                            <label for="radGreen">Green</label><br>
-                        <input type="radio" name="favColor" id="radBlue" value="blue">
-                            <label for="radBlue">Blue</label></p>
+                    <p><input type="radio" name="destination" id="radChicago" value="Chicago">
+                            <label for="radChicago">Chicago</label><br>
+                        <input type="radio" name="destination" id="radNY" value="New York">
+                            <label for="radNY">New York</label><br>
+                        <input type="radio" name="destination" id="radLA" value="Las Angeles">
+                            <label for="radLA">Las Angeles</label></p>
 
                         <p><button type="button"
                                    id="btnSubmit"
-                                   onclick="outputFavColor();"
+                                   onclick="checkCity();"
                                    class="fancy-button red-theme">
                                    Submit</button></p>
                 </form>
 
-                
+                <div id="travelLocationOut" class="form-output yellow-theme"></div>
             </section>
         </main>
 
@@ -102,6 +102,23 @@
 
                 resultDiv.style.backgroundColor = favColorHex;
                 resultDiv.innerHTML = "<p>Your favorite color is " + favColorName + "</p>";
+            }
+
+            function checkCity() {
+                var cityChoice;
+
+                if (document.getElementById("radChicago").checked) {
+                    // Choose Chicago:
+                    cityChoice = document.getElementById("radChicago").value;
+                } else if (document.getElementById("radNY").checked) {
+                    // Choose New York:
+                    cityChoice = document.getElementById("radNY").value;
+                } else if (document.getElementById("radLA").checked) {
+                    // Choose Las Angeles:
+                    cityChoice = document.getElementById("radLA").value;
+                } 
+
+                document.getElementById("travelLocationOut").innerHTML = "<p>Great choice, I love " + cityChoice + "!</p>";
             }
         </script>
     </body>
