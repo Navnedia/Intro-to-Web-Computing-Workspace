@@ -7,6 +7,10 @@
         <link rel="shortcut icon" href="images/sandwich_icon1.png">
     </head>
     <body>
+        <!--Center, bg color, etc-->
+        <!--Value in the html is a security flaw-->
+        <!--Collapsed or explanded for elements?-->
+
         <main class="border-form">
             <header>
                 <h1>DePaul Delights! 🥪</h1>
@@ -21,7 +25,7 @@
                     <p><label for="selSandwichType">Select your sandwich type:</label>
                         <select id="selSandwichType">
                             <option value="veg">Vegetarian ($7)</option>
-                            <option value="beef">Beef ($8)</option>
+                            <option value="roast beef">Roast Beef ($8)</option>
                             <option value="shrimp">Shrimp ($9)</option>
                         </select></p>
 
@@ -45,7 +49,7 @@
 
                     <p><button type="button"
                                id="btnSubmit"
-                               onclick=""
+                               onclick="processOrder();"
                                class="fancy-button teal-theme">
                                Order my Sandwich</button></p>
                 </form>
