@@ -28,6 +28,9 @@
     height: 30px;
 }
 
+
+/* Color Themes: */
+
 .red-theme {
     background-color: #cd2701;
     color: #ffffff;
@@ -73,6 +76,9 @@
     background-color: #000000;
     color: #ffffff;
 }
+
+
+/* DePaul Brand colors: */
 
 .depaul-red-theme {
     background-color: #AF272F;
