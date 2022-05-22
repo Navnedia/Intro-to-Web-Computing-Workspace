@@ -49,6 +49,6 @@ function processOrder() {
 
     // Format and display output:
     var output = "<p>You ordered a " + sandwichType 
-                + " sandwich. Your total cost is: $" + cost + ".</p>";
+                + " sandwich. Your total cost is: $" + cost + "</p>";
     document.getElementById("orderSummary").innerHTML = output;
 }
