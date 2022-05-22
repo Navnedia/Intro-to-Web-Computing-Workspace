@@ -7,15 +7,54 @@
         <link rel="shortcut icon" href="images/sandwich_icon1.png">
     </head>
     <body>
-        <main>
+        <main class="border-form">
             <header>
-                <h1></h1>
+                <h1>DePaul Delights! 🥪</h1>
             </header>
             
-            <!--Figure out the semantic lay out of the sections-->
+            <!--Figure out the semantic lay out of the sections. Should I add sub-sections?-->
+            <section>
+                <h2>Make me a Sandwich</h2>
 
+                <form id="sandwichOrderForm">
+                    <!--Should I add a choose default on the select?-->
+                    <p><label for="selSandwichType">Select your sandwich type:</label>
+                        <select id="selSandwichType">
+                            <option value="veg">Vegetarian ($7)</option>
+                            <option value="beef">Beef ($8)</option>
+                            <option value="shrimp">Shrimp ($9)</option>
+                        </select></p>
+
+                    <!--Maybe put the value in the check boxes-->
+                    <h3>Options:</h3>
+                    <p><input type="checkbox" id="chkAvocado" value="1">
+                            <label for="chkAvocado">Avocado (Add $1.00)</label><br>
+
+                        <input type="checkbox" id="chkArtisanalBun" value="1.25">
+                            <label for="chkArtisanalBun">Artisanal Bun (Add $1.25)</label></p>
+                    
+                    <h3>DePaul Community Discount:</h3>
+                    <p><input type="radio" name="discount" id="radStudent" value="0.2">
+                            <label for="radStudent">Student (20% off)</label><br>
+                        
+                        <input type="radio" name="discount" id="radStaff" value="0.1">
+                            <label for="radStaff">Staff (10% off)</label><br>
+
+                        <input type="radio" name="discount" id="radFaculty" value="0.1">
+                            <label for="radFaculty">Faculty (10% off)</label></p>
+
+                    <p><button type="button"
+                               id="btnSubmit"
+                               onclick=""
+                               class="fancy-button teal-theme">
+                               Order my Sandwich</button></p>
+                </form>
+
+                <div id="orderSummary" class="form-output yellow-theme">
+                </div> <!--End of order orderSummary div-->
+            </section>
         </main>
 
-
+        <script src="scripts/order_handler.js"></script>
     </body>
 </html>

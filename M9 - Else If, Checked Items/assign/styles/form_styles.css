@@ -1,5 +1,7 @@
 .border-form {
     border: 5px solid #000000;
+    border-radius: 20px;
+    background-color: #FFFFFF;
     padding: 0px 15px 0px 15px;
     margin-bottom: 15px;
     width: fit-content;
