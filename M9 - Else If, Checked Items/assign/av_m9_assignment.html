@@ -3,25 +3,24 @@
     <head>
         <title>DePaul Delights Order</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="styles/form_styles.css">
         <link rel="shortcut icon" href="images/sandwich_icon1.png">
+        <link rel="stylesheet" href="styles/form_styles.css">
+        <link rel="stylesheet" href="styles/general_styles.css">
     </head>
     <body>
         <!--Center, bg color, etc-->
-        <!--Value in the html is a security flaw-->
         <!--Collapsed or explanded for elements?-->
+        <!--Figure out the semantic lay out of the sections. Should I add sub-sections?-->
 
         <main class="border-form">
             <header>
                 <h1>DePaul Delights! 🥪</h1>
             </header>
-            
-            <!--Figure out the semantic lay out of the sections. Should I add sub-sections?-->
+
             <section>
                 <h2>Make me a Sandwich</h2>
 
                 <form id="sandwichOrderForm">
-                    <!--Should I add a choose default on the select?-->
                     <p><label for="selSandwichType">Select your sandwich type:</label>
                         <select id="selSandwichType">
                             <option value="vegetarian">Vegetarian ($7)</option>
@@ -29,7 +28,6 @@
                             <option value="shrimp">Shrimp ($9)</option>
                         </select></p>
 
-                    <!--Maybe put the value in the check boxes-->
                     <h3>Options:</h3>
                     <p><input type="checkbox" id="chkAvocado" value="1">
                             <label for="chkAvocado">Avocado (Add $1.00)</label><br>
