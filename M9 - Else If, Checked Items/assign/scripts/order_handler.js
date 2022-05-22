@@ -5,7 +5,7 @@ function processOrder() {
     var sandwichType = document.getElementById("selSandwichType").value;
 
     // Evaluate sandwich choice:
-    if (sandwichType == "veg") {
+    if (sandwichType == "vegetarian") {
         cost = 7;
     } else if (sandwichType == "roast beef") {
         cost = 8;
@@ -31,6 +31,6 @@ function processOrder() {
     cost = cost.toFixed(2);
 
     // Maybe seperate out the output string.
-    var output = "<p>You ordered a " + sandwichType + " sandwich. Your total cost is: $" + cost + "</p>"
+    var output = "<p>You ordered a " + sandwichType + " sandwich. Your total cost is: $" + cost + ".</p>"
     document.getElementById("orderSummary").innerHTML = output;
 }
