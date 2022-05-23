@@ -8,10 +8,6 @@
         <link rel="stylesheet" href="styles/general_styles.css">
     </head>
     <body>
-        <!--Center, bg color, etc-->
-        <!--Collapsed or explanded for elements?-->
-        <!--Figure out the semantic lay out of the sections. Should I add sub-sections?-->
-
         <main class="border-form">
             <header>
                 <h1>DePaul Delights! 🥪</h1>
@@ -27,22 +23,31 @@
                             <option value="roast beef">Roast Beef ($8)</option>
                             <option value="shrimp">Shrimp ($9)</option>
                         </select></p>
-
+            
                     <h3>Options:</h3>
                     <p><input type="checkbox" id="chkAvocado" value="1">
                             <label for="chkAvocado">Avocado (Add $1.00)</label><br>
 
                         <input type="checkbox" id="chkArtisanalBun" value="1.25">
                             <label for="chkArtisanalBun">Artisanal Bun (Add $1.25)</label></p>
-                    
+
                     <h3>DePaul Community Discount:</h3>
-                    <p><input type="radio" name="discount" id="radStudent" value="0.2">
+                    <p><input type="radio" 
+                              name="discount" 
+                              id="radStudent" 
+                              value="0.2">
                             <label for="radStudent">Student (20% off)</label><br>
                         
-                        <input type="radio" name="discount" id="radStaff" value="0.1">
+                        <input type="radio" 
+                               name="discount" 
+                               id="radStaff" 
+                               value="0.1">
                             <label for="radStaff">Staff (10% off)</label><br>
 
-                        <input type="radio" name="discount" id="radFaculty" value="0.1">
+                        <input type="radio" 
+                               name="discount" 
+                               id="radFaculty" 
+                               value="0.1">
                             <label for="radFaculty">Faculty (10% off)</label></p>
 
                     <p><button type="button"
@@ -60,6 +65,3 @@
         <script src="scripts/order_handler.js"></script>
     </body>
 </html>
-
-
-
