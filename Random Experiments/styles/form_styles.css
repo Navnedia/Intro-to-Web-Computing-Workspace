@@ -1,14 +1,24 @@
 .border-form {
     border: 5px solid #000000;
-    padding-left: 15px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    padding: 0px 15px 0px 15px;
     margin-bottom: 15px;
+    width: fit-content;
 }
 
 .form-output {
-    width: fit-content;
+    text-align: center;
+    border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
     font-weight: bold;
+}
+
+.small-input {
+    font-size: 12px;
+    width: 90px;
+    height: 16px;
 }
 
 .fancy-button {
@@ -17,6 +27,9 @@
     font-weight: bold;
     height: 30px;
 }
+
+
+/* Color Themes: */
 
 .red-theme {
     background-color: #cd2701;
@@ -61,5 +74,23 @@
 
 .black-theme {
     background-color: #000000;
+    color: #ffffff;
+}
+
+
+/* DePaul Brand colors: */
+
+.depaul-red-theme {
+    background-color: #AF272F;
+    color: #ffffff;
+}
+
+.depaul-dark-blue-theme {
+    background-color: #0E4174;
+    color: #ffffff;
+}
+
+.depaul-light-blue-theme {
+    background-color: #0057B7;
     color: #ffffff;
 }
