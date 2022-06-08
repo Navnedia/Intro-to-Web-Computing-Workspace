@@ -19,11 +19,14 @@
 
                 <form id="addmissionsForm">
                     <p>Which exhibit would you like to see?</p>
-                    <p><input type="radio" id="radReg" name="exhibitType">
+                    <p><input type="radio" id="radReg" name="exhibitType" checked="checked">
                             <label for="radReg">Regular Exhibit ($10)</label><br>
 
                         <input type="radio" id="radSpecial" name="exhibitType">
                             <label for="radSpecial">Special Exhibit ($15)</label></p>
+                            
+                    <p><label for="chkSenior">Are you a senior citizen? ($5 off)</label>
+                            <input type="checkbox" id="chkSenior"></p>
 
                     <p>Are you a member of the museum? (10% off)</p>
                     <p><input type="radio" id="radIsMember" name="memberStatus">
@@ -32,12 +35,12 @@
                         <input type="radio" id="radNotMember" name="memberStatus">
                             <label for="radNotMember">No</label></p>
 
-                    <p><label for="chkSenior">Are you a senior citizen? ($5 off)</label>
-                            <input type="checkbox" id="chkSenior"></p>
+                    
+                    <!--Add hidden contact section for practice!-->
                     
                     <p><button type="button" 
                                id="btnCalculate" 
-                               onclick="" 
+                               onclick="calcEntry();" 
                                class="fancy-button teal-theme">
                                Calculate Entry Fee</button></p>
                 </form>
@@ -46,6 +49,6 @@
             </section>
         </main>
 
-        <script src="scripts/"></script>
+        <script src="scripts/museum_form.js"></script>
     </body>
 </html>
