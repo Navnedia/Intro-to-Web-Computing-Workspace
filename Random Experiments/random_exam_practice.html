@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <title>Random Exam Practice</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/form_styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Random Exam Practice</h1>
+        </header>
+
+        <main>
+            <section class="border-form">
+                <h2>Tip Calculator</h2>
+
+                <form id="tipForm">
+                    <p><label for="txtPrice">How much was your meal:</label>
+                            <input type="text" id="txtPrice"></p>
+
+                    <p>How would you rate the service?</p>
+                    <p><input type="radio" id="radFair" name="serviceRating" value="0.1">
+                            <label for="radFair">Fair (10%)</label><br>
+                        
+                        <input type="radio" id="radGood" name="serviceRating" value="0.2">
+                            <label for="radGood">Good (20%)</label><br>
+                        
+                        <input type="radio" id="radExcellent" name="serviceRating" value="0.3">
+                            <label for="radExcellent">Excellent (30%)</label></p>
+
+                    <p><button type="button" 
+                               id="btnCalcTip" 
+                               onclick="calcTip();" 
+                               class="fancy-button red-theme">
+                               Calculate Tip</button></p>
+                </form>
+
+                <div id="tipResult" class="form-output yellow-theme"></div> <!--End of tip result div.-->
+            </section>
+
+            <section class="border-form">
+                <h2>Do I need to pay the parking meter? </h2>
+
+                <form id="parkingForm">
+                    <p><label for="selDayOfWeek">Select the day of the week:</label>
+                            <select id="selDayOfWeek">
+                                <option value="Monday">Monday</option>
+                                <option value="Tuesday">Tuesday</option>
+                                <option value="Wednesday">Wednesday</option>
+                                <option value="Thursday">Thursday</option>
+                                <option value="Friday">Friday</option>
+                                <option value="Saturday">Saturday</option>
+                                <option value="Sunday">Sunday</option>
+                            </select></p>
+
+                    <p><input type="checkbox" id="chkHoliday">
+                            <label for="chkHoliday">Today is a holiday</label></p>
+                    
+                    <p><button type="button" 
+                               id="btnSubmitParking" 
+                               onclick="getParkingPrice();" 
+                               class="fancy-button teal-theme">
+                                Submit</button></p>
+                </form>
+
+                <div id="parkingResult" class="form-output yellow-theme"></div> <!--End of parking result div.-->
+            </section>
+        </main>
+
+        <script>
+            function calcTip() {
+                var price = parseFloat(document.getElementById("txtPrice").value);
+                var tip;
+
+                if (isNaN(price)) {
+                    alert("Please enter a valid numrical value!");
+                    return;
+                }
+
+                if (document.getElementById("radFair").checked) {
+                    tip = price * parseFloat(document.getElementById("radFair").value);
+                } else if (document.getElementById("radGood").checked) {
+                    tip = price * parseFloat(document.getElementById("radGood").value);
+                } else if (document.getElementById("radExcellent").checked) {
+                    tip = price * parseFloat(document.getElementById("radExcellent").value);
+                } else {
+                    alert("Please select a tip percent!");
+                    return;
+                }
+
+                tip = tip.toFixed(2);
+                document.getElementById("tipResult").innerHTML = "<p>The tip is: $" + tip + "</p>";
+            }
+
+            function getParkingPrice() {
+                var dayOfWeek = document.getElementById("selDayOfWeek").value;
+                var isHoliday = document.getElementById("chkHoliday").checked;
+                var output;
+
+                if (isHoliday || dayOfWeek == "Saturday" || dayOfWeek == "Sunday") {
+                    output = "You don't need to pay because " + dayOfWeek + " is a weekend, or a holiday :)";
+                } else {
+                    output = "Sorry, you need to pay :(";
+                }
+
+                document.getElementById("parkingResult").innerHTML = "<p>" + output + "</p>";
+            }
+        </script>
+    </body>
+</html>
