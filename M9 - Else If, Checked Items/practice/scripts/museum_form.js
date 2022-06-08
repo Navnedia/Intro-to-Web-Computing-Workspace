@@ -5,7 +5,6 @@ function calcEntry() {
     var fee;
     var today = new Date();
     var dateStr = (today.getMonth() + 1) + "/" + (today.getDate());
-    console.log("dateStr: " + dateStr);
     
     if (document.getElementById("radReg").checked) {
         fee = 10;
