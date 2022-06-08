@@ -1,29 +1,33 @@
 function calcEntry() {
     // Should I use some values in the form for practice?
-    console.log("hello?");
 
-    var fee;
+    
+    var price;
     var today = new Date();
     var dateStr = (today.getMonth() + 1) + "/" + (today.getDate());
     
+    // Note to self, this could also be done in one line using (__) ? 10 : 15.
+    // Set the base price based on the selected exhibit type:
     if (document.getElementById("radReg").checked) {
-        fee = 10;
+        price = 10; // $10 for regular exhibit.
     } else {
-        fee = 15;
+        price = 15; // $15 for special exhibit.
     }
 
+    // Senior discount check:
     if (document.getElementById("chkSenior").checked) {
-        fee -= 5; // Subtract $5 from fee.
+        price -= 5; // Subtract $5 from the price.
     } // Else do nothing (no senior discount).
 
+    // Member discount check:
     if (document.getElementById("radIsMember").checked) {
-        fee -= fee * 0.1; // Subtract 10% from fee.
+        price -= price * 0.1; // Subtract 10% from the price.
     } // Else do nothing (no member discount).
 
-    fee = fee.toFixed(2); // Round to 2 decimals for dollar amount.
+    price = price.toFixed(2); // Round to 2 decimals for dollar amount.
 
     var output = "<p>Thank you for your order on " + dateStr 
-               + ". Your entry fee is $" + fee 
+               + ". Your entry fee is $" + price 
                + ". Thanks for your support!</p>";
     document.getElementById("admissionFeeResult").innerHTML = output;
 }
