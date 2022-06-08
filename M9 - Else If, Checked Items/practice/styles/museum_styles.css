@@ -4,6 +4,10 @@ html, body {
     margin: 0px;
 }
 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .center {
     display: grid;
     place-items: center;
