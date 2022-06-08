@@ -22,7 +22,7 @@
             </header>
 
             <section class="border-form">
-                <p>Please fill out the fields below to estimate your entry fee:</p>
+                <p class="emphasize">Please fill out the fields below to estimate your entry fee:</p>
 
                 <form id="addmissionsForm">
                     <p>Which exhibit would you like to see?</p>
@@ -39,11 +39,31 @@
                     <p><input type="radio" id="radIsMember" name="memberStatus">
                             <label for="radIsMember" name="memberStatus">Yes</label><br>
                         
-                        <input type="radio" id="radNotMember" name="memberStatus">
+                        <input type="radio" id="radNotMember" name="memberStatus" onclick="askMemberSignUp();">
                             <label for="radNotMember">No</label></p>
 
                     
-                    <!--Add hidden contact section for practice!-->
+                    <!--Hidden member sign-up section for practice!-->
+                    <section id="memberSignUp" hidden>
+                        <hr>
+                        <p class="emphasize">Member sign up</p>
+
+                        <p><label for="txtName">Full Name:</label>
+                                <input type="text" id=txtName></p>
+
+                        <p><label for="txtEmail">Email:</label>
+                                <input type="text" id=txtEmail></p>
+
+                        <p><label for="txtAge">Age:</label>
+                                <input type="text" id="txtAge"></p>
+
+                        <p><label for="txtTeir">Choose Member Teir:</label>
+                                <select>
+                                    <option value="Standard">Standard</option>
+                                    <option value="Unlimited">Unlimited</option>
+                                </select></p>
+                        <hr>
+                    </section>
                     
                     <p><button type="button" 
                                id="btnCalculate" 

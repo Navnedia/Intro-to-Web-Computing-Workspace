@@ -12,3 +12,7 @@ body {
     display: grid;
     place-items: center;
 }
+
+.emphasize  {
+    font-weight: bold;
+}

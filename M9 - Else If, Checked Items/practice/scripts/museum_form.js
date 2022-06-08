@@ -1,7 +1,6 @@
 function calcEntry() {
     // Should I use some values in the form for practice?
 
-    
     var price;
     var today = new Date();
     var dateStr = (today.getMonth() + 1) + "/" + (today.getDate());
@@ -26,8 +25,20 @@ function calcEntry() {
 
     price = price.toFixed(2); // Round to 2 decimals for dollar amount.
 
+
+    // Add don't forget your members card message for members.
+
+
     var output = "<p>Thank you for your order on " + dateStr 
                + ". Your entry fee is $" + price 
                + ". Thanks for your support!</p>";
     document.getElementById("admissionFeeResult").innerHTML = output;
+}
+
+function askMemberSignUp() {
+    if (confirm("Would you like to sign up to be a member?")) {
+        document.getElementById("radIsMember").checked = true;
+        document.getElementById("memberSignUp").hidden = false;
+        document.getElementById("txtName").focus();
+    }
 }
